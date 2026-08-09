@@ -1,11 +1,14 @@
-Before you can execute Azure CLI commands, you must sign into Azure. To sign in interactively, use az login. 
+1. Before you can execute Azure CLI commands, you must sign into Azure. To sign in interactively, use az login. 
 
+Run:
 az login
-
-A common first step is to check your active subscription.
-
-az account show
 
 If no web browser is available or the web browser fails to open, you can force device code flow with 
 
+Run:
 az login --use-device-code.
+
+2. Verify that you're actually logged in
+
+Run:
+az account show

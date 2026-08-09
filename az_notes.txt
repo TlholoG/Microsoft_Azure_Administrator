@@ -1,0 +1,1 @@
+Before you can execute Azure CLI commands, you must sign into Azure. To sign in interactively, use az login. 

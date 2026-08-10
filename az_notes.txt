@@ -12,3 +12,20 @@ az login --use-device-code.
 
 Run:
 az account show
+
+3. I have an existing resource group so i check what groups exist so I can select the one I am going to deploy ARM templates to
+
+Run:
+az group list --output table
+
+output:
+Name                              Location          Status
+--------------------------------  ----------------  ---------
+TlholoGropu                       uaenorth          Succeeded
+
+
+4. Creating a deployment group 
+az deployment group create \
+  --name blanktemplate \
+  --resource-group TlholoGropu \
+  --template-file $templateFile

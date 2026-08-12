@@ -1,0 +1,6 @@
+20206/08/12
+==================================================
+Microsoft Entra ID was the focus of today.
+Creating users and deleting users having global administrator rights made all of this permisions possible.
+Grouping users into users groups that were also created.
+Assigning Administrative Units to certain users, I learned that you can restrict adminisstrators to manage a specif unit of users.

@@ -1,4 +1,3 @@
-
 # 2026/08/12
 
 ## Microsoft Entra ID
@@ -13,3 +12,8 @@ Microsoft Entra ID was the focus of today's learning.
 ### Key takeaway
 
 Administrative Units provide a way to delegate administration within Microsoft Entra ID by limiting an administrator's management scope to a specific group of users.
+
+
+today I learned further about Microsoft entra
+
+We went deeper into understanding Manage license usage and Licensed features

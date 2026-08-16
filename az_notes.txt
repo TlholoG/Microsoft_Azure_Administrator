@@ -46,4 +46,21 @@ $today=Get-Date -Format "MM-dd-yyyy"
 $deploymentName="blanktemplate-"+"$today"
 New-AzResourceGroupDeployment -Name $deploymentName -TemplateFile $templateFile
 
+========================================================================================
+Make the ARM Template more flexible by adding parameters and resources
 
+"resources": [
+  {
+    "type": "Microsoft.Storage/storageAccounts",
+    "apiVersion": "2025-01-01",
+    "name": "learntemplatestorage123",
+    "location": "[resourceGroup().location]",
+    "sku": {
+      "name": "[parameters('storageAccountType')]"
+    },
+    "kind": "StorageV2",
+    "properties": {
+      "supportsHttpsTrafficOnly": true
+    }
+  }
+]

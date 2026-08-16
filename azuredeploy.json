@@ -8,9 +8,9 @@
     {
       "type": "Microsoft.Storage/storageAccounts",
       "apiVersion": "2025-01-01",
-      "name": "tlholostorage_arm",
+      "name": "tlholoarmstorage",
       "tags": {
-        "displayName": "tlholostorage_arm"
+        "displayName": "tlholoarmstorage"
       },
       "location": "[resourceGroup().location]",
       "kind": "StorageV2",

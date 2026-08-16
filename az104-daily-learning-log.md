@@ -36,8 +36,6 @@ Today's learning continued with **Microsoft Entra ID**, with a deeper focus on l
 
 Today's lab reinforced the distinction between **Microsoft Entra administrative roles and Azure RBAC roles**. Having a highly privileged identity role, such as Global Administrator, does not automatically provide access to Azure resource data. Access must be explicitly granted through the appropriate **RBAC role at the correct scope**, and permissions can be inherited from higher scopes such as the subscription or resource group.
 
-
-
 # 2026/08/14
 
 ## Azure RBAC & Role Assignments
@@ -56,3 +54,27 @@ Today's learning focused heavily on **Azure Role-Based Access Control (RBAC)** a
 ### Key takeaway
 
 Today's lab helped me understand Azure RBAC more practically by testing permissions rather than only configuring them. I learned that role assignments can be applied at different scopes, with permissions inherited from higher scopes. I also saw how a broader role assignment, such as **Contributor at the subscription level**, can provide permissions across the resources within that scope. Testing user accounts by attempting actions such as deleting Blob Storage files helped me verify that my RBAC configurations were working as intended.
+
+
+
+# 2026/08/16
+
+## Azure ARM Templates & Template Parameters
+
+Today's learning focused on **Azure Resource Manager (ARM) templates**, understanding how deployments behave when no resources are defined, and making templates more flexible and secure through the use of **parameters**.
+
+* Deployed an ARM template with an empty `resources` array (`[]`). The deployment was successful and was recorded in the **Activity Log**, but no Azure resource was created because the template did not specify any resources to deploy.
+* Updated the `azuredeploy.json` template to include a **Storage Account** resource using the resource type `Microsoft.Storage/storageAccounts`.
+* Successfully deployed the updated ARM template and observed that the **Activity Log** reflected a different deployment status, showing **Accepted** during the deployment process.
+* Learned that an ARM template can be used to define Azure resources declaratively, with the resources that are created determined by what is specified in the template.
+* Updated the ARM template to make it more **flexible and reusable** rather than hardcoding configuration values directly into the template.
+* Learned that **parameters** should be used for settings that may vary between environments, such as **SKU, size, capacity, and resource names**.
+* Learned an important security practice: **never hardcode usernames or passwords** in ARM templates or provide default values for them.
+* Learned that usernames, passwords, and other sensitive information should be supplied through **parameters** rather than being embedded directly in the template.
+* Learned to use the **`secureString`** parameter type for passwords and other sensitive string values.
+* Learned that when sensitive information needs to be passed as a JSON object, the **`secureObject`** parameter type should be used.
+* Learned that template parameters using **`secureString`** or **`secureObject`** cannot be read or harvested after the deployment, helping to protect sensitive information.
+
+### Key takeaway
+
+Today's lab helped me understand that a successful ARM template deployment does not necessarily mean that a resource was created. When the `resources` array was empty, Azure successfully processed the deployment but had nothing to deploy. Adding a Storage Account resource to the template resulted in an actual resource deployment. I also learned the importance of using **parameters** to make ARM templates flexible and reusable across different environments, while sensitive information such as usernames and passwords should never be hardcoded. Using **`secureString`** and **`secureObject`** helps protect sensitive values during and after deployment.

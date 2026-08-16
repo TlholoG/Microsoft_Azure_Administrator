@@ -4,6 +4,20 @@
   "parameters": {},
   "functions": [],
   "variables": {},
-  "resources": [],
+  "resources": [
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2025-01-01",
+      "name": "tlholostorage_arm",
+      "tags": {
+        "displayName": "tlholostorage_arm"
+      },
+      "location": "[resourceGroup().location]",
+      "kind": "StorageV2",
+      "sku": {
+        "name": "Standard_LRS"
+      }
+    }
+  ],
   "outputs": {}
 }

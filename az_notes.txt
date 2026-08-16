@@ -37,3 +37,13 @@ Active Directory Domain Services (AD DS or traditionally called just "Active Dir
 AD DS is a directory service that provides the methods for storing directory data, 
 such as user accounts and passwords, and makes this data available to network users, administrators, and other devices and services. 
 It runs as a service on Windows Server, referred to as a domain controller.
+
+=====================================================================================
+The script to deploy ARM templates using Azure Powershell.
+
+$templateFile="azuredeploy.json"
+$today=Get-Date -Format "MM-dd-yyyy"
+$deploymentName="blanktemplate-"+"$today"
+New-AzResourceGroupDeployment -Name $deploymentName -TemplateFile $templateFile
+
+

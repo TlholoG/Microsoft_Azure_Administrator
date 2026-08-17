@@ -78,3 +78,23 @@ Today's learning focused on **Azure Resource Manager (ARM) templates**, understa
 ### Key takeaway
 
 Today's lab helped me understand that a successful ARM template deployment does not necessarily mean that a resource was created. When the `resources` array was empty, Azure successfully processed the deployment but had nothing to deploy. Adding a Storage Account resource to the template resulted in an actual resource deployment. I also learned the importance of using **parameters** to make ARM templates flexible and reusable across different environments, while sensitive information such as usernames and passwords should never be hardcoded. Using **`secureString`** and **`secureObject`** helps protect sensitive values during and after deployment.
+
+
+
+## Azure Policies & Custom Policy Definitions
+
+Today's learning focused on **Azure Policy**, understanding how policies are deployed, customized, assigned throughout the Azure hierarchy, and created from scratch using JSON.
+
+* Learned how to **deploy Azure Policies** and configure policy assignments to enforce organizational rules and standards.
+* Added and customized policies within Azure and observed how policies can be applied at different levels of the **Azure resource hierarchy**.
+* Learned that policies can be assigned at different scopes, including the **management group, subscription, resource group, and individual resource levels**, depending on where governance is required.
+* Learned how to monitor the **compliance status** of deployed policies from the Azure Policy dashboard.
+* Observed that the compliance dashboard provides an overview of resources and their compliance with the policies that have been assigned.
+* Learned that Azure Policies can be created from scratch using **JSON policy definitions**, providing greater control over the rules and conditions being enforced.
+* Created **custom policies** and used Azure's generated policy template as a starting point before modifying the JSON definition.
+* Modified the generated JSON template through the **Start with a blank/custom definition** approach to develop my own policy logic.
+* Learned that Azure Policy provides a way to automate and enforce **governance, compliance, and configuration standards** across Azure environments.
+
+### Key takeaway
+
+Today's lab helped me understand how **Azure Policy** can be used to govern and monitor resources across an Azure environment. I learned that policies can be assigned at different levels of the Azure hierarchy, allowing governance rules to be applied at an appropriate scope. I also learned how to monitor policy compliance from the Azure dashboard and how to create **custom policy definitions using JSON**. Using Azure's generated templates as a starting point and modifying the JSON made it possible to develop my own custom policies rather than relying only on the built-in policies provided by Azure.

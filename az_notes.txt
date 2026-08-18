@@ -64,3 +64,7 @@ Make the ARM Template more flexible by adding parameters and resources
     }
   }
 ]
+
+==================================================================================
+$templateFile="azuredeploy.json"
+New-AzResourceGroupDeployment -Name testdeployment1 -TemplateFile $templateFile -storageAccountType Standard_LRS

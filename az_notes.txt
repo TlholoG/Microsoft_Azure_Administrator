@@ -68,3 +68,9 @@ Make the ARM Template more flexible by adding parameters and resources
 ==================================================================================
 $templateFile="azuredeploy.json"
 New-AzResourceGroupDeployment -Name testdeployment1 -TemplateFile $templateFile -storageAccountType Standard_LRS
+
+==================================================================================
+$templateFile="azuredeploy.json"
+$today=Get-Date -Format "MM-dd-yyyy"
+$deploymentName="addnameparameter-"+"$today"
+New-AzResourceGroupDeployment -Name $deploymentName -TemplateFile $templateFile -storageName {your-unique-name}

@@ -98,3 +98,26 @@ Today's learning focused on **Azure Policy**, understanding how policies are dep
 ### Key takeaway
 
 Today's lab helped me understand how **Azure Policy** can be used to govern and monitor resources across an Azure environment. I learned that policies can be assigned at different levels of the Azure hierarchy, allowing governance rules to be applied at an appropriate scope. I also learned how to monitor policy compliance from the Azure dashboard and how to create **custom policy definitions using JSON**. Using Azure's generated templates as a starting point and modifying the JSON made it possible to develop my own custom policies rather than relying only on the built-in policies provided by Azure.
+
+
+
+# 2026/08/18
+
+## Azure PowerShell & Resource Deployment
+
+Today's learning focused on going deeper into **Azure PowerShell**, including installing and configuring the required tools and using PowerShell to deploy Azure resources.
+
+* Performed the required **PowerShell installations and configurations** for working with Azure.
+* Started by deploying an **Azure Storage Account** using the Azure CLI and explored the different ways Azure resources can be deployed.
+* Learned that Azure resources can be deployed using different approaches, including **JSON ARM templates, Bicep files, and scripts created from scratch**.
+* Learned that instead of creating deployment templates from scratch, an existing Azure resource can be used as a starting point. From the resource's **Automation** menu, I could download the **ARM template, parameters file, and Bicep file**.
+* Used these downloaded files as a **skeleton for the deployment configuration**, which made it easier to understand the required structure and configuration rather than starting with an empty file.
+* Customized the downloaded templates in **Visual Studio Code** before deploying the resources.
+* Used the **Deploy a custom template** feature to deploy the customized configurations and practiced carrying out the deployments using **PowerShell**.
+* Repeated the exercise with different Azure resources, starting with a **Storage Account**, followed by a **Virtual Network**, and finally a **Virtual Machine**.
+* Found that the **Virtual Machine deployment template** required significantly more attention than the Storage Account and Virtual Network templates because it contained more parameters and configuration settings that needed to be carefully reviewed and customized.
+* Learned that while some resource templates can be relatively straightforward to modify, more complex resources require a better understanding of how the **template and parameter values work together** before deployment.
+
+### Key takeaway
+
+Today's lab gave me a better understanding of the different ways Azure resources can be deployed and how **PowerShell can be used as part of the deployment process**. I found that using an existing resource's exported ARM template, parameters, or Bicep file provides a useful starting point instead of building a deployment from scratch. I also learned that the complexity of a template depends heavily on the resource being deployed. Storage Accounts and Virtual Networks were relatively straightforward to customize, while the Virtual Machine template required much more careful attention to its parameters and configuration.

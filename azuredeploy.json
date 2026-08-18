@@ -45,7 +45,7 @@
   "outputs": {
     "storageEndpoint": {
       "type": "object",
-      "value": "[reference('tlholoarmstorage').primaryEndpoints]"
+      "value": "[reference(parameters('storageName')).primaryEndpoints]"
     }
   }
 }

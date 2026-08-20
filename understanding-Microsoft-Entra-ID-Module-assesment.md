@@ -22,7 +22,40 @@ Score 22%
 
 4. Which feature distinguishes Microsoft Entra ID from AD DS in terms of application management?
 
-*  Kerberos protocol for application authentication. **Incorrect**
-*  Use of Group Policy Objects (GPOs) for application deployment.
+* Kerberos protocol for application authentication. **Incorrect**
+* Use of Group Policy Objects (GPOs) for application deployment.
+* Service principal objects for cross-tenant application usage.
 
-*  Service principal objects for cross-tenant application usage.
+5. Which feature is unique to the Microsoft Entra ID P2 plan and not included in the P1 plan or the free version?
+
+* Microsoft Entra Identity Protection **Correct**
+* Cloud App Discovery
+* Self-service group management
+
+6. Which Microsoft Entra ID feature is included in both P1 and P2 plans and allows for configuring access based on device, group, or location?
+
+* Microsoft Entra Privileged Identity Management **Incorrect**
+* Conditional Access
+* Microsoft Entra Identity Protection
+
+7. Which of the following is a limitation of Microsoft Entra ID compared to AD DS?
+
+* Lack of support for Group Policy Objects (GPOs).  **Correct**
+* Inability to manage cloud-based applications.
+* Requirement for on-premises deployment.
+
+
+8. An enterprise is facing issues with inconsistent access patterns and potential security threats to its cloud applications. Which feature available in Microsoft Entra ID P1 can help address these concerns?
+
+* Advanced security reports and alerts
+* Self-service group management
+* Microsoft Identity Manager (MIM) licensing **Incorrect**
+
+
+9. Your organization is considering using Microsoft Entra Domain Services to replace on-premises AD DS. Which limitation should be considered when choosing Microsoft Entra Domain Services for this purpose?
+
+* Supports schema extension **Incorrect**
+* Requires Domain Admins for management
+* Organizational unit structure is flat
+
+<u><wbr>Attempt 2</u>

@@ -60,93 +60,61 @@ Score 22%
 
 Score 89%
 
+1. When considering Microsoft Entra ID as a solution for managing internet-based applications, which authentication protocol does it primarily use?
 
-**1.**When considering Microsoft Entra ID as a solution for managing internet-based applications, which authentication protocol does it primarily use?
+*  Kerberos
 
-[ ] Kerberos
+* LDAP
+* OAuth **Correct**
 
-[ ] LDAP
+2. Which feature is unique to the Microsoft Entra ID P2 plan and not included in the P1 plan or the free version?
 
-[ ] OAuth
+* Microsoft Entra Identity Protection  **Correct**
+* Cloud App Discovery
+*  Self-service group management
 
-**Correct**
+3. What is a significant difference between how organizational structures are managed in Microsoft Entra ID compared to AD DS?
 
-**2.**Which feature is unique to the Microsoft Entra ID P2 plan and not included in the P1 plan or the free version?
+* Microsoft Entra ID and AD DS use Group Policies to manage organizational structures.
+* Microsoft Entra ID uses a flat structure without OUs, while AD DS uses a hierarchical structure with OUs. **Correct**
+* Both Microsoft Entra ID and AD DS use hierarchical structures with Organizational Units (OUs).
 
-[ ] Microsoft Entra Identity Protection
+4. Which Microsoft Entra ID feature available in P2, but not in P1, allows for enhanced monitoring and protection of user accounts?
 
-**Correct**
+* Microsoft Entra Identity Protection
+* Microsoft Entra Connect Health **Incorrect**
+* Microsoft Identity Manager
 
-[ ] Cloud App Discovery
+5. Which of the following best describes the primary focus of Microsoft Entra ID compared to AD DS?
 
-[ ] Self-service group management
+*  Creating organizational units for policy application.
 
-**3.**What is a significant difference between how organizational structures are managed in Microsoft Entra ID compared to AD DS?
+* Managing computer objects within a corporate network.
+* Providing identity management services to web-based applications. **Correct**
 
-[ ] Microsoft Entra ID and AD DS use Group Policies to manage organizational structures.
+6. Which feature provided by Microsoft Entra ID P2 enhances security by managing privileges for administrators?
 
-[ ] Microsoft Entra ID uses a flat structure without OUs, while AD DS uses a hierarchical structure with OUs.
+* Self-service password reset with writeback
+* Microsoft Entra Privileged Identity Management **Correct**
+* Advanced security reports and alerts
 
-**Correct**
+7. An organization is considering transitioning from its on-premises Active Directory Domain Services (AD DS) to Microsoft Entra ID for its cloud-based applications. Which feature of Microsoft Entra ID would provide an advantage over AD DS in this scenario?
 
-[ ] Both Microsoft Entra ID and AD DS use hierarchical structures with Organizational Units (OUs).
+*  Support for multi-factor authentication **Correct**
+*  Hierarchical structure with Organizational Units
 
-**4.**Which Microsoft Entra ID feature available in P2, but not in P1, allows for enhanced monitoring and protection of user accounts?
+*  Use of Kerberos protocol for authentication
 
-[ ] Microsoft Entra Identity Protection
+8. An organization using AD DS is planning to extend its on-premises infrastructure to Microsoft Entra ID. What feature of Microsoft Entra ID can help manage user authentication across both environments?
 
-[ ] Microsoft Entra Connect Health
+*  Enabling federation between organizations **Correct**
+* Using Group Policy Objects (GPOs)
 
-**Incorrect**
+*  Implementing Kerberos authentication
 
-[ ] Microsoft Identity Manager
+9. Which feature is available in Microsoft Entra ID but not natively in AD DS?
 
-**5.**Which of the following best describes the primary focus of Microsoft Entra ID compared to AD DS?
+*  Group Policy management.
 
-[ ] Creating organizational units for policy application.
-
-[ ] Managing computer objects within a corporate network.
-
-[ ] Providing identity management services to web-based applications.
-
-**Correct**
-
-**6.**Which feature provided by Microsoft Entra ID P2 enhances security by managing privileges for administrators?
-
-[ ] Self-service password reset with writeback
-
-[ ] Microsoft Entra Privileged Identity Management
-
-**Correct**
-
-[ ] Advanced security reports and alerts
-
-**7.**An organization is considering transitioning from its on-premises Active Directory Domain Services (AD DS) to Microsoft Entra ID for its cloud-based applications. Which feature of Microsoft Entra ID would provide an advantage over AD DS in this scenario?
-
-[ ] Support for multi-factor authentication
-
-**Correct**
-
-[ ] Hierarchical structure with Organizational Units
-
-[ ] Use of Kerberos protocol for authentication
-
-**8.**An organization using AD DS is planning to extend its on-premises infrastructure to Microsoft Entra ID. What feature of Microsoft Entra ID can help manage user authentication across both environments?
-
-[ ] Enabling federation between organizations
-
-**Correct**
-
-[ ] Using Group Policy Objects (GPOs)
-
-[ ] Implementing Kerberos authentication
-
-**9.**Which feature is available in Microsoft Entra ID but not natively in AD DS?
-
-[ ] Group Policy management.
-
-[ ] Self-service password reset.
-
-**Correct**
-
-[ ] Kerberos-based authentication.
+* Self-service password reset.  **Correct**
+* Kerberos-based authentication.

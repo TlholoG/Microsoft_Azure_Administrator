@@ -11,3 +11,14 @@ Score 22%
 **Incorrect**
 
 [ ] Utilizing Organizational Units (OUs) for application segregation.
+
+
+**2.**Your company is using Microsoft Entra ID to manage cloud-based resources and needs to identify irregular sign-in activities. Which feature of Microsoft Entra ID should be utilized for this purpose?
+
+[ ] Conditional access
+
+**Incorrect**
+
+[ ] Identity protection
+
+[ ] Application Proxy

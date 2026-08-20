@@ -14,10 +14,15 @@ Score 22%
 * Identity protection
 * Application Proxy
 
-
 3. Which feature provided by Microsoft Entra ID P2 enhances security by managing privileges for administrators?
 
-*  Advanced security reports and alerts
-*  Self-service password reset with writeback **Incorrect**
+* Advanced security reports and alerts
+* Self-service password reset with writeback **Incorrect**
+* Microsoft Entra Privileged Identity Management
 
-*  Microsoft Entra Privileged Identity Management
+4. Which feature distinguishes Microsoft Entra ID from AD DS in terms of application management?
+
+*  Kerberos protocol for application authentication. **Incorrect**
+*  Use of Group Policy Objects (GPOs) for application deployment.
+
+*  Service principal objects for cross-tenant application usage.

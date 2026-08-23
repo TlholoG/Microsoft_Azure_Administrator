@@ -132,3 +132,20 @@ Today's learning focused on **creating, configuring, and managing identities** i
 ### Key takeaway
 
 Today's exercises gave me more practical experience with **identity and user management in Microsoft Entra ID**. I learned how to create and configure users, assign the appropriate licenses, and manage deleted accounts by either restoring them or removing them when they are no longer required.
+
+
+# 2026/08/20
+
+## Microsoft Entra ID — Groups & Device Registration
+
+Today's learning continued with **creating, configuring, and managing identities** in Microsoft Entra ID, with a focus on groups and device registration.
+
+* Continued working through the identity management exercises in Microsoft Entra ID.
+* Completed an exercise on **adding groups in Microsoft Entra ID**.
+* Practiced creating and managing groups to organize users and manage access more effectively.
+* Worked through an exercise on **configuring and managing device registration**.
+* Learned how devices can be registered with Microsoft Entra ID and managed as part of an organization's identity environment.
+
+### Key takeaway
+
+Today's exercises expanded my understanding of **Microsoft Entra ID identity management** by showing how groups can be used to organize and manage users and how **device registration** connects devices to the organization's identity environment.

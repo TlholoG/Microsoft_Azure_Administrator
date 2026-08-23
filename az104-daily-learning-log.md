@@ -55,8 +55,6 @@ Today's learning focused heavily on **Azure Role-Based Access Control (RBAC)** a
 
 Today's lab helped me understand Azure RBAC more practically by testing permissions rather than only configuring them. I learned that role assignments can be applied at different scopes, with permissions inherited from higher scopes. I also saw how a broader role assignment, such as **Contributor at the subscription level**, can provide permissions across the resources within that scope. Testing user accounts by attempting actions such as deleting Blob Storage files helped me verify that my RBAC configurations were working as intended.
 
-
-
 # 2026/08/16
 
 ## Azure ARM Templates & Template Parameters
@@ -79,8 +77,6 @@ Today's learning focused on **Azure Resource Manager (ARM) templates**, understa
 
 Today's lab helped me understand that a successful ARM template deployment does not necessarily mean that a resource was created. When the `resources` array was empty, Azure successfully processed the deployment but had nothing to deploy. Adding a Storage Account resource to the template resulted in an actual resource deployment. I also learned the importance of using **parameters** to make ARM templates flexible and reusable across different environments, while sensitive information such as usernames and passwords should never be hardcoded. Using **`secureString`** and **`secureObject`** helps protect sensitive values during and after deployment.
 
-
-
 ## Azure Policies & Custom Policy Definitions
 
 Today's learning focused on **Azure Policy**, understanding how policies are deployed, customized, assigned throughout the Azure hierarchy, and created from scratch using JSON.
@@ -98,8 +94,6 @@ Today's learning focused on **Azure Policy**, understanding how policies are dep
 ### Key takeaway
 
 Today's lab helped me understand how **Azure Policy** can be used to govern and monitor resources across an Azure environment. I learned that policies can be assigned at different levels of the Azure hierarchy, allowing governance rules to be applied at an appropriate scope. I also learned how to monitor policy compliance from the Azure dashboard and how to create **custom policy definitions using JSON**. Using Azure's generated templates as a starting point and modifying the JSON made it possible to develop my own custom policies rather than relying only on the built-in policies provided by Azure.
-
-
 
 # 2026/08/18
 
@@ -121,3 +115,20 @@ Today's learning focused on going deeper into **Azure PowerShell**, including in
 ### Key takeaway
 
 Today's lab gave me a better understanding of the different ways Azure resources can be deployed and how **PowerShell can be used as part of the deployment process**. I found that using an existing resource's exported ARM template, parameters, or Bicep file provides a useful starting point instead of building a deployment from scratch. I also learned that the complexity of a template depends heavily on the resource being deployed. Storage Accounts and Virtual Networks were relatively straightforward to customize, while the Virtual Machine template required much more careful attention to its parameters and configuration.
+
+
+# 2026/08/19
+
+## Microsoft Entra ID — Identity Management
+
+Today's learning focused on **creating, configuring, and managing identities** in Microsoft Entra ID.
+
+* Worked through exercises covering the **creation, configuration, and management of users**.
+* Practiced creating and configuring user accounts in Microsoft Entra ID.
+* Completed an exercise on **assigning licenses to users** and learned how licenses provide users with access to specific Microsoft services and features.
+* Completed an exercise on **restoring and removing deleted users**.
+* Learned how deleted user accounts can be managed and restored when necessary.
+
+### Key takeaway
+
+Today's exercises gave me more practical experience with **identity and user management in Microsoft Entra ID**. I learned how to create and configure users, assign the appropriate licenses, and manage deleted accounts by either restoring them or removing them when they are no longer required.

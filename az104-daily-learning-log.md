@@ -116,7 +116,6 @@ Today's learning focused on going deeper into **Azure PowerShell**, including in
 
 Today's lab gave me a better understanding of the different ways Azure resources can be deployed and how **PowerShell can be used as part of the deployment process**. I found that using an existing resource's exported ARM template, parameters, or Bicep file provides a useful starting point instead of building a deployment from scratch. I also learned that the complexity of a template depends heavily on the resource being deployed. Storage Accounts and Virtual Networks were relatively straightforward to customize, while the Virtual Machine template required much more careful attention to its parameters and configuration.
 
-
 # 2026/08/19
 
 ## Microsoft Entra ID — Identity Management
@@ -133,7 +132,6 @@ Today's learning focused on **creating, configuring, and managing identities** i
 
 Today's exercises gave me more practical experience with **identity and user management in Microsoft Entra ID**. I learned how to create and configure users, assign the appropriate licenses, and manage deleted accounts by either restoring them or removing them when they are no longer required.
 
-
 # 2026/08/20
 
 ## Microsoft Entra ID — Groups & Device Registration
@@ -149,3 +147,37 @@ Today's learning continued with **creating, configuring, and managing identities
 ### Key takeaway
 
 Today's exercises expanded my understanding of **Microsoft Entra ID identity management** by showing how groups can be used to organize and manage users and how **device registration** connects devices to the organization's identity environment.
+
+# 2026/08/27
+
+## Azure Administrator, Network Administrator & Database Administrator Responsibilities
+
+Today's learning focused on understanding the **core operational responsibilities of an Azure Administrator** and how these responsibilities differ from those of a **Network Administrator** and **Database Administrator** in an organization migrating from on-premises infrastructure to Azure.
+
+* Identified five key responsibilities of an **Azure Administrator**:
+
+  * Deploying and managing **virtual machines** and configuring the required compute resources.
+  * Managing and configuring **Azure networking**.
+  * Managing **Azure identities**, including creating, deleting, and merging users from directories outside of Microsoft Entra ID.
+  * Deploying and managing **Azure Storage**, including storage accounts, blobs, containers, and files, while also managing storage security.
+  * Monitoring the **usage, health, and performance of resources** deployed within the tenant.
+* Learned that a **Network Administrator** remains responsible for the organization's physical and network infrastructure, including:
+
+  * Configuring and installing network infrastructure and ensuring internet connectivity.
+  * Implementing network security protocols, managing firewalls, and preventing unauthorized or unsecured access.
+  * Managing network hardware such as **routers and switches** to ensure on-site computers can connect to the internet and cloud resources.
+  * Troubleshooting network connectivity problems.
+  * Monitoring network health and maintaining availability for critical operations while minimizing downtime.
+* Considered how the responsibilities of a traditional Network Administrator may change as an organization moves more infrastructure to the cloud, with some day-to-day infrastructure responsibilities shifting toward cloud administration.
+* Learned that a **Database Administrator (DBA)** is responsible for managing and maintaining the organization's databases and the data stored within them.
+* Identified key DBA responsibilities, including:
+
+  * Installing and configuring **database management systems** on deployed virtual machines.
+  * Securing databases and managing permissions and access to data.
+  * Ensuring databases are backed up and that **recovery and disaster-management plans** are in place.
+  * Optimizing databases to maintain good performance when data is queried.
+  * Keeping database systems **updated and maintained**.
+
+### Key takeaway
+
+Today's exercise helped me understand that although Azure, networking, and database administration can overlap, they have different areas of responsibility. The **Azure Administrator** focuses on managing cloud resources such as compute, networking, storage, identities, and monitoring. The **Network Administrator** focuses primarily on connectivity, network infrastructure, and network security, while the **Database Administrator** focuses on the databases themselves, including their security, backups, performance, and maintenance.

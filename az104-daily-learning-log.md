@@ -181,3 +181,24 @@ Today's learning focused on understanding the **core operational responsibilitie
 ### Key takeaway
 
 Today's exercise helped me understand that although Azure, networking, and database administration can overlap, they have different areas of responsibility. The **Azure Administrator** focuses on managing cloud resources such as compute, networking, storage, identities, and monitoring. The **Network Administrator** focuses primarily on connectivity, network infrastructure, and network security, while the **Database Administrator** focuses on the databases themselves, including their security, backups, performance, and maintenance.
+
+
+# 2026/08/28
+
+## Remote Desktop, Windows Server & Virtual Machine Storage
+
+Today's learning focused on completing my **formative assessment** and gaining practical experience with **Remote Desktop Protocol (RDP)**, Windows Server, and storage management within a virtual machine.
+
+* Completed and submitted the remaining sections of my **formative assessment**.
+* Practiced using **Remote Desktop Protocol (RDP)** to remotely connect to a virtual machine.
+* Installed **Windows Server Datacenter** on a virtual machine.
+* Learned that a **virtual machine requires an operating system** in order to function and provide a usable environment.
+* Learned that although a virtual machine is provisioned with a virtual hard disk by default, additional virtual disks can be created and **attached to the virtual machine** when additional storage is required.
+* Learned that separating the operating system disk from a data disk can help protect data from issues affecting the operating system disk and makes the data independent of the operating system.
+* Practiced preparing a newly attached disk so that it could be used by the operating system.
+* Learned that before a newly attached disk can be used normally, it needs to be **initialized and configured with a volume and drive letter**.
+* Learned how to **partition and format the new drive** within the Windows Server virtual machine so that it can be used for storing data.
+
+### Key takeaway
+
+Today's practical work helped me understand how **operating systems and storage work within Azure virtual machines**. I learned that a VM needs an operating system to function and that additional virtual disks can be attached to separate data from the operating system. This provides greater flexibility when managing and protecting data because the data can remain separate from the disk containing the operating system.

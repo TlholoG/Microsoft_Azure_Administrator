@@ -182,7 +182,6 @@ Today's learning focused on understanding the **core operational responsibilitie
 
 Today's exercise helped me understand that although Azure, networking, and database administration can overlap, they have different areas of responsibility. The **Azure Administrator** focuses on managing cloud resources such as compute, networking, storage, identities, and monitoring. The **Network Administrator** focuses primarily on connectivity, network infrastructure, and network security, while the **Database Administrator** focuses on the databases themselves, including their security, backups, performance, and maintenance.
 
-
 # 2026/08/28
 
 ## Remote Desktop, Windows Server & Virtual Machine Storage
@@ -202,3 +201,38 @@ Today's learning focused on completing my **formative assessment** and gaining p
 ### Key takeaway
 
 Today's practical work helped me understand how **operating systems and storage work within Azure virtual machines**. I learned that a VM needs an operating system to function and that additional virtual disks can be attached to separate data from the operating system. This provides greater flexibility when managing and protecting data because the data can remain separate from the disk containing the operating system.
+
+
+# 2026/08/29
+
+## Microsoft Cloud Adoption Framework for Azure – Cloud Governance
+
+Today I worked through the Microsoft Learn chapter on the **Microsoft Cloud Adoption Framework for Azure** and focused on the **Govern** methodology. I learned that the Cloud Adoption Framework provides guidance, best practices, documentation, and tools to help organizations successfully plan, adopt, manage, and govern their Azure environments.
+
+* Learned that the **Microsoft Cloud Adoption Framework for Azure** is an end-to-end framework designed to help organizations achieve their cloud adoption objectives.
+* Learned that cloud governance is the process of **managing and controlling how cloud resources and services are used within an organization**.
+* Learned that the **Govern methodology** provides a structured approach for establishing and improving cloud governance in Azure.
+* Learned that cloud governance covers several important areas, including:
+
+  * Regulatory compliance
+  * Security
+  * Operations
+  * Cost management
+  * Data management
+  * Resource management
+  * Artificial intelligence (AI)
+* Learned that **Azure Policy** plays an important role in cloud governance by helping organizations enforce rules and maintain control over their Azure environments.
+* Learned that effective governance helps reduce risks and ensures that cloud activities remain aligned with the organization's overall cloud strategy and business objectives.
+* Learned that cloud governance is **not a once-off activity**. It is a continuous process that requires regular monitoring, evaluation, and adjustment as technology, risks, and compliance requirements change.
+* Learned the five steps of the Cloud Adoption Framework's **Govern** methodology:
+
+  1. **Build a governance team** – establish a team responsible for defining, maintaining, and reporting on governance policies.
+  2. **Assess cloud risks** – identify and assess risks relating to areas such as security, compliance, costs, data, resources, operations, and AI.
+  3. **Document cloud governance policies** – define clear rules and guidelines for acceptable cloud usage.
+  4. **Enforce cloud governance policies** – use automated tools and manual oversight to ensure resources comply with the established policies.
+  5. **Monitor cloud governance** – continuously monitor the environment and governance processes to maintain compliance.
+* Learned that after establishing governance, organizations should regularly revisit **steps 2–5** to adapt their governance approach over time.
+
+### Key takeaway
+
+Today I learned that managing an Azure environment is not only about creating and configuring resources. Organizations also need governance to control how those resources are used, manage costs and risks, maintain security and compliance, and ensure that cloud usage supports business objectives. I also learned that Azure Policy can be used as an important tool for creating **guardrails** that help keep an Azure environment within the organization's defined rules and standards.

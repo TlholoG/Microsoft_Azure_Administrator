@@ -236,3 +236,27 @@ Today I worked through the Microsoft Learn chapter on the **Microsoft Cloud Adop
 ### Key takeaway
 
 Today I learned that managing an Azure environment is not only about creating and configuring resources. Organizations also need governance to control how those resources are used, manage costs and risks, maintain security and compliance, and ensure that cloud usage supports business objectives. I also learned that Azure Policy can be used as an important tool for creating **guardrails** that help keep an Azure environment within the organization's defined rules and standards.
+
+
+# 2026/08/31
+
+## Virtual Machine Deployment and CyberPanel Installation
+
+Today I continued my practical Azure training by creating and configuring a virtual machine and connecting to it remotely. I worked with both Windows Server and Linux, gaining practical experience with deploying a VM and accessing it using PowerShell.
+
+### What I learned and did
+
+* Created an Azure Virtual Machine and selected **Windows Server Datacenter** as the initial operating system option.
+* Worked with **Ubuntu 22.04** on the virtual machine for the Linux environment.
+* Installed **CyberPanel** on the Ubuntu virtual machine.
+* Used **PowerShell on my local computer** to remotely connect and log in to the virtual machine.
+* Practiced managing a cloud-based server remotely rather than working directly from the Azure portal.
+* Learned that Azure VMs can be used to host different server environments and applications depending on the operating system and configuration.
+
+### Next Exercise – Virtual Machine Scale Sets (VMSS)
+
+The next part of the exercise introduces **Virtual Machine Scale Sets (VMSS)**. I will deploy a scale set and practice adjusting its flexibility by changing the number of virtual machines in the scale set. I will also continue practising remote access to the virtual machines.
+
+## Key takeaway
+
+Today I gained more practical experience with Azure virtual machines by deploying a server environment, installing CyberPanel on Ubuntu, and remotely accessing the VM using PowerShell. The next step is to build on this knowledge by learning how Virtual Machine Scale Sets allow multiple VMs to be managed together and scaled according to requirements.

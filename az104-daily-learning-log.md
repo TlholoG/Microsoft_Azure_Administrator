@@ -260,3 +260,23 @@ The next part of the exercise introduces **Virtual Machine Scale Sets (VMSS)**. 
 ## Key takeaway
 
 Today I gained more practical experience with Azure virtual machines by deploying a server environment, installing CyberPanel on Ubuntu, and remotely accessing the VM using PowerShell. The next step is to build on this knowledge by learning how Virtual Machine Scale Sets allow multiple VMs to be managed together and scaled according to requirements.
+
+
+## 2026/09/01
+
+### Assignment Preparation and Azure Administration Review
+
+Today I focused on working through questions for my Azure Administrator assignments and formative assessments. Rather than completing new practical Azure labs, I spent the day applying the knowledge I have gained from previous practical exercises to scenario-based questions.
+
+* Worked through **Azure troubleshooting scenarios**, including investigating why a user might be unable to provision a Virtual Machine.
+* Reviewed how to troubleshoot **RBAC assignments, Azure Policies, subscription limits, resource locks, and Resource Group constraints**.
+* Worked through **Azure tagging standards**, including the use of `Environment`, `Owner`, `Department`, and `CostCentre` tags.
+* Considered how Azure tags support **Cost Management, budgeting, cost allocation, accountability, and enterprise auditing**.
+* Worked through a **Microsoft Entra ID user-provisioning scenario** involving creating new users, assigning temporary credentials, and requiring a password change during the first login.
+* Worked through an **Azure Management Groups hierarchy** scenario involving a Holding Company and regional divisions in South Africa, Botswana, Namibia, and Zimbabwe.
+* Applied the Azure hierarchy of **Management Groups → Subscriptions → Resource Groups → Resources** to a practical enterprise governance scenario.
+* Focused on understanding **how Azure governance can be structured to provide regional control while maintaining central cost and policy governance**.
+
+### Key takeaway
+
+Today was mainly about **putting the practical knowledge I have gained into written, scenario-based answers**. I am starting to see how the individual Azure concepts I have been learning—such as RBAC, Policy, tagging, Management Groups, subscriptions, and Resource Groups—fit together as part of an overall **Azure administration and governance strategy**.

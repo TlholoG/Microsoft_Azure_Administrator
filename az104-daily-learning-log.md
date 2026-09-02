@@ -280,3 +280,6 @@ Today I focused on working through questions for my Azure Administrator assignme
 ### Key takeaway
 
 Today was mainly about **putting the practical knowledge I have gained into written, scenario-based answers**. I am starting to see how the individual Azure concepts I have been learning—such as RBAC, Policy, tagging, Management Groups, subscriptions, and Resource Groups—fit together as part of an overall **Azure administration and governance strategy**.
+
+
+data and governance

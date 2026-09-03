@@ -282,4 +282,27 @@ Today I focused on working through questions for my Azure Administrator assignme
 Today was mainly about **putting the practical knowledge I have gained into written, scenario-based answers**. I am starting to see how the individual Azure concepts I have been learning—such as RBAC, Policy, tagging, Management Groups, subscriptions, and Resource Groups—fit together as part of an overall **Azure administration and governance strategy**.
 
 
-data and governance
+# 2026/09/03
+
+## Virtual Machine Scale Sets, Networking & Azure Container Apps
+
+Today's learning focused on **Virtual Machine Scale Sets (VMSS)**, Azure virtual networking, and the introduction of **Azure Container Apps** and the **Platform as a Service (PaaS)** model. I gained practical experience with how Azure can automatically scale compute resources based on workload demand, as well as how virtual machines communicate through subnets and how Azure container-based services can reduce the need to manage the underlying infrastructure.
+
+* Learned about **Virtual Machine Scale Sets (VMSS)** and how they allow multiple virtual machines to be deployed and managed as a group.
+* Learned that VM Scale Sets can automatically **scale out** by adding additional VM instances when demand increases and **scale in** when demand decreases.
+* Practiced configuring scaling rules for a VM Scale Set based on **CPU utilization**.
+* Used the Linux `stress` command to intentionally increase the CPU workload of a virtual machine. This allowed me to observe the VM reaching its CPU threshold and trigger the scaling rules that had been configured.
+* After stopping the `stress` process, the CPU utilization decreased, allowing me to observe the VM Scale Set **scale down** as the workload returned to normal.
+* Learned about **subnets** and how virtual machines that need to communicate with one another can be placed within the same subnet to allow communication over the virtual network.
+* Learned that a **network interface card (NIC)** is an important component of an Azure virtual machine because it provides the network connection between the VM and the Azure virtual network and subnet.
+* Learned that when creating an Azure virtual network, an **address space** must be defined and subnets are created within that address space. Virtual machines can then be connected to the appropriate subnet through their network interfaces.
+* Learned how **jump servers** or proxy servers can be used to provide controlled access to virtual machines. Because access can be routed through the jump server, individual VMs do not necessarily need to have their own **public IP addresses**, which can reduce their direct exposure to the internet.
+* Introduction to **Azure Container Apps**, learning how Azure can host containerized applications without requiring me to manage the underlying virtual machines directly.
+* Learned the distinction between a **container** and a **container app**. A container itself does not provide the application-level scaling capability, while Azure Container Apps provides the platform for running containers and can automatically scale the application based on demand.
+* Created a container application containing **two containers** using an **ARM template**, giving me practical experience with infrastructure-as-code for deploying container-based workloads.
+* Learned how **Platform as a Service (PaaS)** abstracts much of the underlying infrastructure from the administrator, allowing the focus to shift from managing servers and hardware to managing the application and its configuration.
+* Learned that **serverless services in Azure** further abstract the underlying infrastructure. Azure manages the underlying compute, CPU, memory, storage, and other infrastructure resources in the background, while I interact primarily with the service and application rather than managing the physical hardware.
+
+### Key takeaway
+
+Today's practical work helped me understand how Azure can provide **elasticity and infrastructure abstraction**. With Virtual Machine Scale Sets, I learned how Azure can automatically respond to changing workloads by scaling compute resources up or down. I also learned how networking components such as **virtual networks, subnets, and network interface cards** allow virtual machines to communicate securely. Finally, learning about Azure Container Apps and serverless services showed me how PaaS can reduce the amount of infrastructure that an administrator needs to manage, allowing more focus on the applications and workloads running in Azure.

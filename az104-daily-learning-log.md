@@ -379,3 +379,31 @@ Today I completed studying the **Cloud Adoption Framework for Azure (CAF)**, foc
 ### Key takeaway
 
 Today's study helped me understand that **Azure administration is not only about deploying and maintaining resources**, but also about ensuring that those resources remain secure, compliant, consistent, and cost-effective. The **Cloud Adoption Framework for Azure** provides a broader governance framework, while services such as **Azure Policy** provide practical mechanisms for enforcing governance requirements within Azure. This builds on the practical policy and governance exercises I have already completed and gives me a better understanding of how those individual Azure administration tasks fit into an **enterprise cloud governance strategy**.
+
+
+# 2026/09/06
+
+## Azure Policy Design Principles, Governance & Azure Resource Manager
+
+Today I completed studying the section **"Azure Policy Design Principles"**, focusing on how Azure governance is designed and implemented to maintain control over cloud resources and workloads. I also studied the **Azure resource hierarchy** and the distinction between **control plane and data plane operations** within Azure Resource Manager.
+
+### What I learned and did
+
+* Studied the role of **governance in Azure** and how governance mechanisms and processes help organizations maintain control over applications, resources, security, and cloud expenditure.
+* Learned that effective Azure governance requires **planning policies and establishing strategic priorities** before implementing governance controls.
+* Learned that cloud resources should be organized in a structured manner to support **security, resource management, cost tracking, and workload governance**.
+* Studied the **Azure management hierarchy**, beginning with the **tenant root management group**, followed by management groups, subscriptions, resource groups, and individual resources.
+* Learned that Azure management groups can be organized into a hierarchy extending to **six levels beneath the tenant root group**, allowing organizations to structure governance according to their organizational requirements.
+* Reviewed the role of **Azure Resource Manager (ARM)** as the management layer responsible for handling Azure's **control plane operations**.
+* Learned the distinction between the **control plane and data plane**:
+
+  * **Control plane** – used to create, configure, manage, and control Azure resources within a subscription.
+  * **Data plane** – used to access and interact with the actual capabilities and data provided by a specific Azure resource.
+* Learned that **Azure Policy operates primarily through the control plane** and integrates with **Azure Resource Manager** to evaluate and enforce organizational rules and compliance requirements.
+* Learned that Azure Resource Manager provides a consistent management layer across Azure services, centralizing common management capabilities such as **resource deployment, access control, policy, and resource organization**.
+* Studied how the **data plane** relates to the actual operations performed against data or application functionality within an Azure resource.
+* Learned that governance and policy controls can influence whether resources and their configurations comply with organizational requirements, while the actual workload or data operations occur through the resource's **data plane**.
+
+### Key takeaway
+
+Today's study helped me understand where **Azure Policy and Azure Resource Manager fit within the overall Azure architecture**. The distinction between the **control plane and data plane** is particularly important because it separates the management of Azure resources from the actual operations performed by those resources. I also gained a better understanding of how the Azure hierarchy—from the **tenant root management group through management groups, subscriptions, resource groups, and resources**—provides the structure on which governance policies can be applied. This builds directly on my previous study of the **Cloud Adoption Framework and Azure governance**, showing how governance principles can be translated into practical controls using Azure Policy and Azure Resource Manager.

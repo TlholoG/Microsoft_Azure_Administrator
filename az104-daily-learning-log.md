@@ -348,3 +348,34 @@ The Azure resources I worked with during the exercise were:
 Today's practical exercise helped me understand the beginning of the **end-to-end container deployment workflow**. I developed an application in Visual Studio, used Docker to containerize it, and successfully published the resulting container image to **Azure Container Registry**. The troubleshooting was particularly valuable because I had to identify that hardware virtualization was disabled at the BIOS/UEFI level and that the Docker Engine needed to be running before Visual Studio could perform the container operations.
 
 I also gained a clearer understanding of the role of **Azure Container Registry** within a containerized environment: the registry provides a managed location for storing container images, while a separate Azure container hosting service can subsequently retrieve and run those images. This introduced me to the broader **PaaS and managed-container model** in Azure.
+
+
+# 2026/09/05
+
+## Cloud Adoption Framework for Azure
+
+Today I completed studying the **Cloud Adoption Framework for Azure (CAF)**, focusing on the governance aspects of adopting and managing cloud resources. The section introduced the importance of establishing governance policies that address business requirements, regulatory obligations, security, cost management, and operational consistency.
+
+### What I learned and did
+
+* Studied the **Cloud Adoption Framework for Azure** and its role in helping organizations plan, adopt, govern, and manage their Azure environment.
+* Learned about the key considerations when defining a **cloud governance policy**, including:
+
+  * **Business risk** – identifying and managing risks associated with cloud adoption.
+  * **Policy and compliance** – ensuring that cloud resources and workloads comply with organizational policies, regulatory requirements, and industry standards.
+  * **Process** – establishing consistent processes for managing and governing cloud resources.
+* Studied the **five core disciplines of cloud governance**:
+
+  * **Cost Management** – monitoring and controlling cloud expenditure, managing IT costs, and adjusting resources according to demand to ensure that cloud investments provide appropriate value.
+  * **Security Baseline** – establishing and enforcing a minimum security standard across cloud adoption efforts to ensure that resources meet organizational security requirements.
+  * **Resource Consistency** – maintaining consistent resource configurations and establishing standardized practices for resource onboarding, recovery, and discoverability.
+  * **Identity Baseline** – establishing consistent identity and access-management standards, including the appropriate definition and assignment of roles and permissions.
+  * **Deployment Acceleration** – improving the speed and consistency of deployments through centralized governance, standardized processes, and reusable deployment templates.
+* Learned that **Azure Policy** is a primary Azure governance service used to enforce organizational standards and evaluate resource compliance at scale.
+* Learned that Azure Policy can be applied to **existing resources as well as resources deployed in the future**, allowing organizations to establish governance guardrails across their Azure environment.
+* Learned how Azure Policy can be used to assess whether resources comply with defined organizational requirements and identify non-compliant resources.
+* Connected the concepts of **Azure Policy, governance, compliance, security, cost management, and resource consistency** to the practical Azure administration exercises I have completed previously.
+
+### Key takeaway
+
+Today's study helped me understand that **Azure administration is not only about deploying and maintaining resources**, but also about ensuring that those resources remain secure, compliant, consistent, and cost-effective. The **Cloud Adoption Framework for Azure** provides a broader governance framework, while services such as **Azure Policy** provide practical mechanisms for enforcing governance requirements within Azure. This builds on the practical policy and governance exercises I have already completed and gives me a better understanding of how those individual Azure administration tasks fit into an **enterprise cloud governance strategy**.

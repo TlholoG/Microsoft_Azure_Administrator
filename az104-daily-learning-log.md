@@ -306,3 +306,45 @@ Today's learning focused on **Virtual Machine Scale Sets (VMSS)**, Azure virtual
 ### Key takeaway
 
 Today's practical work helped me understand how Azure can provide **elasticity and infrastructure abstraction**. With Virtual Machine Scale Sets, I learned how Azure can automatically respond to changing workloads by scaling compute resources up or down. I also learned how networking components such as **virtual networks, subnets, and network interface cards** allow virtual machines to communicate securely. Finally, learning about Azure Container Apps and serverless services showed me how PaaS can reduce the amount of infrastructure that an administrator needs to manage, allowing more focus on the applications and workloads running in Azure.
+
+
+
+# 2026/09/04
+
+## Visual Studio, Docker, WSL2 & Azure Container Registry
+
+Today I focused on learning about **containerized applications** and how an application developed locally can be packaged using Docker and published to an Azure container registry. I installed and configured **Visual Studio, Docker Desktop, and Windows Subsystem for Linux 2 (WSL2)** before creating a web application and publishing it from Visual Studio.
+
+The practical exercise involved several troubleshooting steps because the local development environment was not initially configured correctly. This gave me additional experience in identifying and resolving infrastructure and configuration issues before successfully publishing the application to Azure.
+
+### What I learned and did
+
+* Installed **Visual Studio** as the development environment for creating the web application.
+* Installed **Docker Desktop** to provide the containerization environment required to build and run containers locally.
+* Installed and configured **Windows Subsystem for Linux 2 (WSL2)**, which can provide the Linux-based backend used by Docker Desktop on Windows.
+* Learned about **containers** and how an application can be packaged together with its required dependencies into a portable container image.
+* Troubleshot an issue where the **Docker Engine would not start** because hardware virtualization was disabled on the computer.
+* Investigated the issue and determined that virtualization had to be enabled through the computer's **BIOS/UEFI firmware settings**.
+* Enabled **hardware virtualization** in the BIOS/UEFI, after which the Docker Engine was able to start successfully.
+* Created a web application named **WebApplication2** in Visual Studio using the **.NET 7 framework** to practise working with an older framework version and compatibility requirements.
+* Encountered errors while working with the application template and determined that **Docker Desktop and the Docker Engine needed to be running in the background** before the container-related operations in Visual Studio could be performed successfully.
+* Configured the **NuGet package source** as `nuget.org`, using the service endpoint `https://api.nuget.org/v3/index.json`, allowing the .NET application to retrieve the required packages during the build process.
+* Successfully used Visual Studio's **Publish** functionality to build and package the application as a Docker container image.
+* Published the container image to an **Azure Container Registry (ACR)** named **tlholocontainerregistry**.
+* Verified the result in the Azure portal by navigating through **TlholoResources → tlholocontainerregistry → Services → Repositories** and confirming that the published application was present in the registry.
+* Learned that **Azure Container Registry** provides a managed repository for storing and managing container images that can subsequently be used by Azure container hosting services.
+* Gained an introduction to the **Platform as a Service (PaaS)** approach, where Azure can manage the underlying infrastructure required to run an application while the administrator focuses on the application and its configuration.
+
+### Azure Resources Used
+
+The Azure resources I worked with during the exercise were:
+
+* **Resource Group – `TlholoResources`**: Provided the logical management boundary for the Azure resources used in the exercise.
+* **Azure Container Registry – `tlholocontainerregistry`**: Provided the managed container registry where the Docker image produced from **WebApplication2** was published and stored.
+* **Repositories**: Used within the Azure Container Registry to view the container images that had been pushed to the registry.
+
+### Key takeaway
+
+Today's practical exercise helped me understand the beginning of the **end-to-end container deployment workflow**. I developed an application in Visual Studio, used Docker to containerize it, and successfully published the resulting container image to **Azure Container Registry**. The troubleshooting was particularly valuable because I had to identify that hardware virtualization was disabled at the BIOS/UEFI level and that the Docker Engine needed to be running before Visual Studio could perform the container operations.
+
+I also gained a clearer understanding of the role of **Azure Container Registry** within a containerized environment: the registry provides a managed location for storing container images, while a separate Azure container hosting service can subsequently retrieve and run those images. This introduced me to the broader **PaaS and managed-container model** in Azure.

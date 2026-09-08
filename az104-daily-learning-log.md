@@ -202,7 +202,6 @@ Today's learning focused on completing my **formative assessment** and gaining p
 
 Today's practical work helped me understand how **operating systems and storage work within Azure virtual machines**. I learned that a VM needs an operating system to function and that additional virtual disks can be attached to separate data from the operating system. This provides greater flexibility when managing and protecting data because the data can remain separate from the disk containing the operating system.
 
-
 # 2026/08/29
 
 ## Microsoft Cloud Adoption Framework for Azure – Cloud Governance
@@ -237,7 +236,6 @@ Today I worked through the Microsoft Learn chapter on the **Microsoft Cloud Adop
 
 Today I learned that managing an Azure environment is not only about creating and configuring resources. Organizations also need governance to control how those resources are used, manage costs and risks, maintain security and compliance, and ensure that cloud usage supports business objectives. I also learned that Azure Policy can be used as an important tool for creating **guardrails** that help keep an Azure environment within the organization's defined rules and standards.
 
-
 # 2026/08/31
 
 ## Virtual Machine Deployment and CyberPanel Installation
@@ -261,7 +259,6 @@ The next part of the exercise introduces **Virtual Machine Scale Sets (VMSS)**. 
 
 Today I gained more practical experience with Azure virtual machines by deploying a server environment, installing CyberPanel on Ubuntu, and remotely accessing the VM using PowerShell. The next step is to build on this knowledge by learning how Virtual Machine Scale Sets allow multiple VMs to be managed together and scaled according to requirements.
 
-
 ## 2026/09/01
 
 ### Assignment Preparation and Azure Administration Review
@@ -280,7 +277,6 @@ Today I focused on working through questions for my Azure Administrator assignme
 ### Key takeaway
 
 Today was mainly about **putting the practical knowledge I have gained into written, scenario-based answers**. I am starting to see how the individual Azure concepts I have been learning—such as RBAC, Policy, tagging, Management Groups, subscriptions, and Resource Groups—fit together as part of an overall **Azure administration and governance strategy**.
-
 
 # 2026/09/03
 
@@ -306,8 +302,6 @@ Today's learning focused on **Virtual Machine Scale Sets (VMSS)**, Azure virtual
 ### Key takeaway
 
 Today's practical work helped me understand how Azure can provide **elasticity and infrastructure abstraction**. With Virtual Machine Scale Sets, I learned how Azure can automatically respond to changing workloads by scaling compute resources up or down. I also learned how networking components such as **virtual networks, subnets, and network interface cards** allow virtual machines to communicate securely. Finally, learning about Azure Container Apps and serverless services showed me how PaaS can reduce the amount of infrastructure that an administrator needs to manage, allowing more focus on the applications and workloads running in Azure.
-
-
 
 # 2026/09/04
 
@@ -349,7 +343,6 @@ Today's practical exercise helped me understand the beginning of the **end-to-en
 
 I also gained a clearer understanding of the role of **Azure Container Registry** within a containerized environment: the registry provides a managed location for storing container images, while a separate Azure container hosting service can subsequently retrieve and run those images. This introduced me to the broader **PaaS and managed-container model** in Azure.
 
-
 # 2026/09/05
 
 ## Cloud Adoption Framework for Azure
@@ -380,7 +373,6 @@ Today I completed studying the **Cloud Adoption Framework for Azure (CAF)**, foc
 
 Today's study helped me understand that **Azure administration is not only about deploying and maintaining resources**, but also about ensuring that those resources remain secure, compliant, consistent, and cost-effective. The **Cloud Adoption Framework for Azure** provides a broader governance framework, while services such as **Azure Policy** provide practical mechanisms for enforcing governance requirements within Azure. This builds on the practical policy and governance exercises I have already completed and gives me a better understanding of how those individual Azure administration tasks fit into an **enterprise cloud governance strategy**.
 
-
 # 2026/09/06
 
 ## Azure Policy Design Principles, Governance & Azure Resource Manager
@@ -407,3 +399,60 @@ Today I completed studying the section **"Azure Policy Design Principles"**, foc
 ### Key takeaway
 
 Today's study helped me understand where **Azure Policy and Azure Resource Manager fit within the overall Azure architecture**. The distinction between the **control plane and data plane** is particularly important because it separates the management of Azure resources from the actual operations performed by those resources. I also gained a better understanding of how the Azure hierarchy—from the **tenant root management group through management groups, subscriptions, resource groups, and resources**—provides the structure on which governance policies can be applied. This builds directly on my previous study of the **Cloud Adoption Framework and Azure governance**, showing how governance principles can be translated into practical controls using Azure Policy and Azure Resource Manager.
+
+
+
+# 2026/09/07
+
+## Azure App Services & Azure Container Registry
+
+Today I focused on learning about **Azure App Service** and **Azure Container Registry (ACR)**, with an emphasis on understanding how applications and container images can be deployed and managed using Azure services. I learned that when an **App Service** is created, Azure automatically provides a **default domain name**, which can be used to access the hosted web application.
+
+I also worked with **Azure Container Registry** and practised the process of obtaining a container image locally, running the image using Docker, and then preparing the image to be stored in an Azure container registry. This exercise helped me understand the relationship between **Docker containers, container images, Azure Container Registry, and Azure App Service**.
+
+### What I learned and did
+
+* Learned about **Azure App Service** and its role as a managed **Platform as a Service (PaaS)** offering for hosting web applications.
+* Learned that an App Service is assigned a **default domain** when it is created, providing a standard endpoint through which the hosted application can be accessed.
+* Created an **Azure Container Registry** to provide a managed repository for storing container images.
+* Connected to Azure using **Azure PowerShell** with `Connect-AzAccount`.
+* Used `Get-AzSubscription` to retrieve and view the Azure subscriptions available to my account.
+* Used `Set-AzContext` to select the required Azure subscription context before performing subsequent Azure administration operations.
+* Connected to the Azure Container Registry using `Connect-AzContainerRegistry`.
+* Used **Docker** to pull the `nginx` container image to my local computer.
+* Ran the NGINX container locally and mapped the container port to port **8080** on the local machine to test the containerized application.
+* Used Docker image tagging to associate the local NGINX image with the target Azure Container Registry repository.
+* Practised the process of pushing the tagged container image to **Azure Container Registry**, allowing the image to be stored in Azure and made available for use by Azure container-hosting services.
+* Gained practical experience with the workflow of moving a container image from a **local Docker environment into Azure Container Registry**.
+
+### Commands Used
+
+The main PowerShell and Docker commands used during the exercise were:
+
+```powershell
+Connect-AzAccount
+Get-AzSubscription
+Set-AzContext -Subscription "fef0ee0f0e0"
+Connect-AzContainerRegistry -Name tlholocontainer
+
+docker login
+docker pull nginx
+docker run -it --rm -p 8080:80 nginx
+docker tag nginx tlhoregistry/test/nginx
+docker push tlhoregistry/test/nginx
+```
+
+### Azure Resources Used
+
+The Azure resources and services I worked with during the exercise were:
+
+* **Azure App Service** – Used to learn how Azure provides a managed platform for hosting web applications and automatically assigns a default domain.
+* **Azure Container Registry** – Used as a managed repository for storing container images.
+* **Azure PowerShell** – Used to authenticate to Azure, select the appropriate subscription context, and interact with Azure resources.
+* **Docker** – Used locally to pull, run, tag, and prepare the NGINX container image for storage in Azure Container Registry.
+
+### Key takeaway
+
+Today's practical exercise helped me understand the **container deployment workflow from a local environment into Azure**. I used Docker to obtain and run an NGINX container image locally, tagged the image for the Azure Container Registry, and practised pushing the image into the registry.
+
+I also gained a better understanding of the relationship between **Azure App Service and Azure Container Registry**. App Service provides a managed platform for hosting applications, while Azure Container Registry provides a centralized and managed location for storing container images that can be used by Azure services. This strengthened my understanding of **PaaS, containerization, container registries, and Azure application deployment** from an Azure administration perspective.

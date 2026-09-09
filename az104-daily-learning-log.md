@@ -456,3 +456,46 @@ The Azure resources and services I worked with during the exercise were:
 Today's practical exercise helped me understand the **container deployment workflow from a local environment into Azure**. I used Docker to obtain and run an NGINX container image locally, tagged the image for the Azure Container Registry, and practised pushing the image into the registry.
 
 I also gained a better understanding of the relationship between **Azure App Service and Azure Container Registry**. App Service provides a managed platform for hosting applications, while Azure Container Registry provides a centralized and managed location for storing container images that can be used by Azure services. This strengthened my understanding of **PaaS, containerization, container registries, and Azure application deployment** from an Azure administration perspective.
+
+
+# 2026/09/08
+
+## Azure Compute Service Strategy – Architecture Case Study
+
+Today I completed an **Azure Compute Service Strategy case study** for ZTQ Solutions. The exercise required me to evaluate three different workload scenarios and recommend the most appropriate Azure compute hosting model based on each workload's architecture, technology stack, traffic patterns, operational requirements, and deployment characteristics.
+
+The assessment focused on selecting between **Azure Virtual Machines (IaaS), Azure App Service (PaaS), and Azure Container Apps (ACA)**. Rather than selecting a service based only on the application technology, I evaluated the operational requirements of each workload and considered factors such as scalability, infrastructure management, deployment strategies, cost optimization, and the level of operating-system control required.
+
+### What I learned and did
+
+* Analysed the requirements of **three different application workloads** and assessed which Azure compute service best aligned with each workload's characteristics.
+* Evaluated **Azure Virtual Machines, Azure App Service, and Azure Container Apps** as potential compute hosting models.
+* Considered the difference between **IaaS and PaaS** when determining how much infrastructure management responsibility would remain with the organization.
+* Assessed **Workload 1 – Public-Facing Marketing Platform**, which uses a Node.js/React stack with dynamic APIs and mixed static content.
+* Identified that the workload experiences **variable and unpredictable traffic spikes**, particularly during marketing campaigns.
+* Recommended **Azure App Service (PaaS)** for Workload 1 because the requirements prioritize high availability, reduced operating-system management, and deployment capabilities such as **staging validation and blue-green deployment swaps**.
+* Assessed **Workload 2 – Recruitment Portal Microservices**, which consists of containerized .NET Core and Go APIs operating within a decoupled microservices architecture.
+* Identified that the workload is **event-driven and asynchronous**, with demand fluctuating according to applicant submission volumes.
+* Recommended **Azure Container Apps (ACA)** for Workload 2 because the architecture requires independently scalable microservices, the ability to **scale to zero when idle**, and progressive traffic splitting without requiring the organization to manage an underlying Kubernetes cluster.
+* Assessed **Workload 3 – Legacy Learning Management System (LMS)**, which is a monolithic application with custom IIS configurations, Windows Server dependencies, media transcoding components, and legacy C++/SQL Server Agent workloads.
+* Identified that this workload requires **full operating-system-level administrative control**, including registry modifications, custom drivers, and system agent installations.
+* Recommended **Azure Virtual Machines (IaaS)** for Workload 3 because the application has legacy Windows Server dependencies and requires administrative control over the operating system and its configuration.
+* Considered the requirement for **automated rolling upgrades across VM instances** when evaluating the VM-based strategy for the legacy workload.
+* Presented my **architectural recommendations** and explained the reasoning behind the selected compute service for each scenario.
+* Practised approaching Azure architecture decisions from a **requirements-first perspective**, rather than selecting a service based solely on familiarity with the technology.
+
+### Recommended Compute Strategy
+
+| Workload                          | Recommended Service              | Primary Reason                                                                                                 |
+| --------------------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Public-Facing Marketing Platform  | **Azure App Service**      | Managed PaaS hosting, high availability, reduced OS management, and staging/blue-green deployment capabilities |
+| Recruitment Portal Microservices  | **Azure Container Apps**   | Containerized microservices, event-driven scaling, scale-to-zero, and progressive traffic splitting            |
+| Legacy Learning Management System | **Azure Virtual Machines** | Full OS-level control and support for legacy Windows Server and application dependencies                       |
+
+### Key takeaway
+
+Today's case study strengthened my ability to **select an Azure compute service based on workload requirements rather than simply choosing the most familiar hosting model**. I learned that the appropriate compute strategy depends on factors such as application architecture, traffic behaviour, scalability requirements, deployment methodology, infrastructure-management responsibility, and the degree of operating-system control required.
+
+The exercise also reinforced the distinction between the three approaches. **Azure App Service** is well suited to managed application hosting where minimizing infrastructure administration is important, **Azure Container Apps** is appropriate for containerized and independently scalable microservices, while **Azure Virtual Machines** provide the greater level of operating-system control required by workloads with legacy or highly customized infrastructure dependencies.
+
+Presenting my recommendations allowed me to practise communicating an **Azure architectural decision and the reasoning behind it**, which is an important part of working with cloud infrastructure beyond simply deploying individual Azure resources.

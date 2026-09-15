@@ -400,8 +400,6 @@ Today I completed studying the section **"Azure Policy Design Principles"**, foc
 
 Today's study helped me understand where **Azure Policy and Azure Resource Manager fit within the overall Azure architecture**. The distinction between the **control plane and data plane** is particularly important because it separates the management of Azure resources from the actual operations performed by those resources. I also gained a better understanding of how the Azure hierarchy—from the **tenant root management group through management groups, subscriptions, resource groups, and resources**—provides the structure on which governance policies can be applied. This builds directly on my previous study of the **Cloud Adoption Framework and Azure governance**, showing how governance principles can be translated into practical controls using Azure Policy and Azure Resource Manager.
 
-
-
 # 2026/09/07
 
 ## Azure App Services & Azure Container Registry
@@ -457,7 +455,6 @@ Today's practical exercise helped me understand the **container deployment workf
 
 I also gained a better understanding of the relationship between **Azure App Service and Azure Container Registry**. App Service provides a managed platform for hosting applications, while Azure Container Registry provides a centralized and managed location for storing container images that can be used by Azure services. This strengthened my understanding of **PaaS, containerization, container registries, and Azure application deployment** from an Azure administration perspective.
 
-
 # 2026/09/08
 
 ## Azure Compute Service Strategy – Architecture Case Study
@@ -499,3 +496,6 @@ Today's case study strengthened my ability to **select an Azure compute service 
 The exercise also reinforced the distinction between the three approaches. **Azure App Service** is well suited to managed application hosting where minimizing infrastructure administration is important, **Azure Container Apps** is appropriate for containerized and independently scalable microservices, while **Azure Virtual Machines** provide the greater level of operating-system control required by workloads with legacy or highly customized infrastructure dependencies.
 
 Presenting my recommendations allowed me to practise communicating an **Azure architectural decision and the reasoning behind it**, which is an important part of working with cloud infrastructure beyond simply deploying individual Azure resources.
+
+
+2026/09/15

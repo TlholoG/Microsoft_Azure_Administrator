@@ -499,3 +499,6 @@ Presenting my recommendations allowed me to practise communicating an **Azure ar
 
 
 2026/09/15
+
+
+2026/09/16

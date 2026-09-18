@@ -497,8 +497,172 @@ The exercise also reinforced the distinction between the three approaches. **Azu
 
 Presenting my recommendations allowed me to practise communicating an **Azure architectural decision and the reasoning behind it**, which is an important part of working with cloud infrastructure beyond simply deploying individual Azure resources.
 
+# 2026/09/15
 
-2026/09/15
+## Configure Virtual Networks
 
+Today I focused on **configuring and managing Azure Virtual Networks**, with emphasis on network connectivity, secure remote administration, traffic distribution, and troubleshooting. The practical exercises covered **VNet peering, Azure Bastion, subnets, Network Security Groups, Azure Load Balancer, and Network Watcher**. These activities helped me understand how Azure networking components work together to provide secure and reliable communication between resources.
 
-2026/09/16
+### What I learned and did
+
+* Studied the role of **Azure Virtual Network (VNet)** as the fundamental networking service used to provide private network connectivity for Azure resources.
+* Reviewed how **subnets** are used to logically segment a VNet and organize resources according to workload, security, or infrastructure requirements.
+* Practised configuring **VNet peering** to establish private connectivity between virtual networks.
+* Learned that VNet peering can be used to connect VNets across different regions, allowing resources in separate Azure networks to communicate using Azure's private backbone network.
+* Studied the concept of a **hub-and-spoke network architecture**, where a central hub VNet can provide shared services and connectivity for multiple spoke VNets.
+* Learned how **Azure Bastion** provides secure RDP and SSH access to virtual machines through the Azure Portal without requiring public IP addresses on the individual VMs.
+* Reviewed the security benefits of removing direct public management endpoints and using Bastion for administrative access.
+* Practised configuring an **Azure Load Balancer**, including the concepts of frontend IP configuration, backend pools, health probes, and load-balancing rules.
+* Learned that **health probes** allow Azure Load Balancer to determine whether backend instances are available to receive traffic.
+* Studied how **backend pools** contain the resources that receive traffic from the load balancer.
+* Reviewed how **load-balancing rules** determine how incoming traffic is distributed to healthy backend instances.
+* Studied **Network Watcher** as an Azure networking diagnostic service used to troubleshoot connectivity and network configuration issues.
+* Learned how Network Watcher can be used to investigate **dropped traffic** and analyse network communication between Azure resources.
+* Reviewed **packet capture** as a troubleshooting technique for analysing network traffic and identifying connectivity problems.
+* Connected these networking services to the broader requirements of **security, availability, connectivity, and network troubleshooting** within an Azure environment.
+
+### Azure Networking Components Used
+
+| Azure service/component         | Purpose                                                      |
+| ------------------------------- | ------------------------------------------------------------ |
+| **Azure Virtual Network** | Provides private networking for Azure resources              |
+| **Subnets**               | Segment the VNet into logical network sections               |
+| **VNet Peering**          | Connects VNets privately, including across regions           |
+| **Azure Bastion**         | Provides secure RDP/SSH administration without public IPs    |
+| **Azure Load Balancer**   | Distributes network traffic across backend resources         |
+| **Health Probes**         | Determines whether backend resources are available           |
+| **Network Watcher**       | Provides network monitoring and troubleshooting capabilities |
+
+### Key takeaway
+
+Today's exercises helped me understand that **Azure networking is not limited to creating a VNet and assigning IP addresses**. A production network requires multiple components working together to provide connectivity, security, availability, and operational visibility. I gained a better understanding of how **VNet peering, Bastion, Load Balancer, and Network Watcher** address different networking requirements, from connecting distributed environments and securely administering VMs to distributing traffic and troubleshooting connectivity issues.
+
+# 2026/09/16
+
+## Implement and Manage Storage
+
+Today I focused on **implementing and managing Azure Storage**, covering storage performance, replication, data lifecycle management, secure access, and file-sharing capabilities. The practical exercises involved selecting appropriate storage configurations based on workload requirements, configuring replication, implementing lifecycle management policies, generating SAS tokens, and configuring Azure Files. These exercises helped me understand how Azure Storage can be designed around performance, availability, security, and cost requirements.
+
+### What I learned and did
+
+* Studied the different Azure Storage options and how storage configurations should be selected according to **workload requirements, performance, access patterns, and cost**.
+* Learned about **IOPS (Input/Output Operations Per Second)** as a measure of storage performance and considered IOPS requirements when selecting appropriate storage configurations.
+* Studied **Azure Storage redundancy** and the purpose of replication in protecting data against infrastructure or regional failures.
+* Practised configuring storage replication and reviewed the differences between **Locally Redundant Storage (LRS)** and **Geo-Redundant Storage (GRS)**.
+* Learned that **LRS** maintains multiple copies of data within a single Azure region, while **GRS** provides replication to a secondary region for additional protection against regional failures.
+* Studied **Blob lifecycle management** and how policies can automatically transition data between storage tiers according to its age and access requirements.
+* Practised creating lifecycle rules using conditions such as the age of blobs to automatically move infrequently accessed data to the **Archive** tier.
+* Learned how lifecycle management can help reduce storage costs by aligning storage tiers with actual data-access patterns.
+* Studied **Shared Access Signatures (SAS)** as a mechanism for providing delegated and time-limited access to Azure Storage resources.
+* Reviewed how SAS permissions can be restricted according to factors such as **time period, storage service, resource type, permissions, and IP address**.
+* Practised configuring **Azure Files** to provide managed file shares that can be accessed by compatible endpoints.
+* Learned the difference between object storage such as **Azure Blob Storage** and file-based storage such as **Azure Files**.
+* Practised restoring deleted or previously protected blob data using Azure Storage data-protection capabilities.
+* Reviewed the importance of **soft delete and point-in-time recovery** when protecting storage data against accidental deletion or modification.
+* Connected storage configuration decisions to the broader requirements of **performance, availability, data protection, security, and cost optimization**.
+
+### Storage Concepts Covered
+
+| Storage concept                  | Purpose                                                       |
+| -------------------------------- | ------------------------------------------------------------- |
+| **IOPS**                   | Measures storage input/output performance                     |
+| **LRS**                    | Provides redundant copies within a single region              |
+| **GRS**                    | Replicates data to a secondary region                         |
+| **Lifecycle Management**   | Automates movement of data between storage tiers              |
+| **Archive Tier**           | Provides lower-cost storage for rarely accessed data          |
+| **SAS**                    | Provides controlled and delegated access to storage           |
+| **Azure Files**            | Provides managed cloud-based file shares                      |
+| **Blob Soft Delete**       | Protects blobs from accidental deletion                       |
+| **Point-in-Time Recovery** | Allows supported blob data to be restored to an earlier state |
+
+### Key takeaway
+
+Today's practical work showed me that **Azure Storage design requires more than simply creating a storage account**. Storage must be configured according to the workload's performance requirements, data-access patterns, availability requirements, security needs, and recovery objectives. I gained a better understanding of how **IOPS, redundancy, lifecycle management, SAS, Azure Files, and data protection features** can be combined to create a storage environment that is both operationally appropriate and cost-conscious.
+
+# 2026/09/17
+
+## Deploy and Manage Compute
+
+Today I focused on **deploying and managing Azure compute resources**, with emphasis on virtual machines, scalability, remote administration, and selecting the appropriate compute service for different workloads. I also reviewed how Azure compute services differ in their infrastructure-management responsibilities and how workload requirements influence the selection between **Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)**.
+
+### What I learned and did
+
+* Reviewed the process of deploying and managing **Azure Virtual Machines** through the Azure Portal.
+* Studied the configuration of VM resources including **operating system images, VM sizes, networking, disks, authentication, and administrative access**.
+* Practised working with both **Windows Server and Ubuntu Linux virtual machines**, strengthening my understanding of managing different operating-system environments in Azure.
+* Reviewed secure remote administration of VMs using **RDP for Windows** and **SSH for Linux**.
+* Studied Azure VM networking concepts including **virtual networks, subnets, network interfaces, and data disks**.
+* Practised attaching and managing additional **managed disks** for virtual machines.
+* Studied **Virtual Machine Scale Sets (VMSS)** and their role in deploying and managing groups of identical VM instances.
+* Reviewed how VMSS can automatically increase or decrease the number of VM instances according to workload demand.
+* Practised using **CPU utilization as a scaling metric**, allowing additional instances to be deployed when resource utilization increases and removed when demand decreases.
+* Learned how automatic scaling can improve application availability during periods of increased demand while avoiding unnecessary compute resources during periods of lower utilization.
+* Reviewed the differences between **Azure Virtual Machines, Azure App Service, and Azure Container Apps** when selecting a compute hosting model.
+* Learned that **Azure Virtual Machines** provide greater operating-system control and are appropriate when applications have legacy dependencies or require customized OS-level configuration.
+* Learned that **Azure App Service** provides a managed PaaS environment for hosting applications while reducing the amount of underlying infrastructure administration required.
+* Studied **Azure Container Apps** as a managed platform for containerized applications and microservices that require independent scaling and event-driven workloads.
+* Connected compute-service selection to factors such as **application architecture, scalability, operating-system control, deployment requirements, and infrastructure-management responsibility**.
+* Practised approaching compute architecture decisions from a **requirements-first perspective**, rather than selecting a service based solely on the underlying application technology.
+
+### Compute Services Compared
+
+| Compute service                  | Primary characteristics                                           |
+| -------------------------------- | ----------------------------------------------------------------- |
+| **Azure Virtual Machines** | IaaS with extensive OS and infrastructure control                 |
+| **Azure App Service**      | Managed PaaS for web applications and APIs                        |
+| **Azure Container Apps**   | Managed platform for containerized applications and microservices |
+| **VM Scale Sets**          | Enables groups of VMs to scale according to workload demand       |
+
+### Key takeaway
+
+Today's work strengthened my understanding of **Azure compute from both an administration and architecture perspective**. Deploying a VM involves managing operating systems, disks, networking, authentication, and access, while services such as App Service and Container Apps abstract more of the underlying infrastructure. I also gained a better understanding of **VM Scale Sets and automatic scaling**, showing how Azure compute resources can respond dynamically to workload demand. Most importantly, I learned that compute-service selection should be based on **workload requirements, scalability, operational responsibility, and the level of infrastructure control required**.
+
+# 2026/09/18
+
+## Monitor and Back Up Azure Resources
+
+Today I focused on **monitoring, alerting, logging, backup, and disaster recovery within Azure**. The practical exercises covered Azure Monitor alerts, custom dashboards, Log Analytics and KQL queries, Recovery Services vault backups, and Azure Site Recovery replication. These exercises demonstrated how Azure administrators can monitor resource health and performance while also implementing mechanisms to protect workloads and recover them following failures or service disruptions.
+
+### What I learned and did
+
+* Studied **Azure Monitor** and its role in collecting and analysing telemetry from Azure resources.
+* Practised configuring **metric alerts** to detect high resource utilization, using VM **Percentage CPU** as an example.
+* Configured an alert condition using an **average CPU utilization threshold above 80%** to represent a high-utilization scenario.
+* Learned how **Action Groups** can be associated with alerts to trigger notifications when defined conditions are met.
+* Practised creating an **Azure Dashboard** to provide a centralized performance view across multiple Azure resources.
+* Learned how different resource metrics can be combined into a single dashboard to provide operational visibility across an Azure environment.
+* Studied **Log Analytics workspaces** as a centralized location for collecting and querying log data.
+* Practised using **Kusto Query Language (KQL)** to identify system errors within collected logs.
+* Used KQL filtering to identify error-level events and retrieve information such as the **timestamp, computer, event source, event ID, and error description**.
+* Practised using KQL aggregation to identify systems or sources generating a high number of errors during a defined period.
+* Learned that effective monitoring combines **metrics, logs, alerts, dashboards, and queries** to provide different perspectives on resource health and operational activity.
+* Studied **Azure Recovery Services vaults** and their role in protecting Azure Virtual Machines through backup.
+* Practised configuring VM backup using a **Recovery Services vault and backup policy**.
+* Learned how to initiate an on-demand backup and verify that a **recovery point** has been created.
+* Practised the **Restore VM** process using a selected recovery point and reviewed the configuration required to recover a VM into an Azure environment.
+* Studied **Azure Site Recovery** as a disaster recovery service for replicating workloads to a secondary Azure region.
+* Reviewed the process of configuring a **target region, replicated VM, recovery settings, and replication monitoring**.
+* Studied **Test Failover** as a disaster recovery testing mechanism that allows the recovery process to be validated without intentionally disrupting the production workload.
+* Learned the importance of testing backup and disaster recovery processes rather than assuming that a configured backup or replication policy will automatically provide a successful recovery.
+* Connected monitoring, backup, and disaster recovery concepts to the broader requirements of **availability, resilience, operational visibility, and business continuity**.
+
+### Azure Monitoring and Recovery Components
+
+| Azure service                     | Purpose                                                |
+| --------------------------------- | ------------------------------------------------------ |
+| **Azure Monitor**           | Monitors resource performance and telemetry            |
+| **Metric Alerts**           | Detect abnormal or threshold-based resource conditions |
+| **Action Groups**           | Define notifications or actions when alerts trigger    |
+| **Azure Dashboards**        | Provide centralized performance views                  |
+| **Log Analytics**           | Collects and analyses log data                         |
+| **KQL**                     | Queries and analyses Azure log data                    |
+| **Recovery Services Vault** | Provides backup and recovery management                |
+| **Azure Backup**            | Protects supported Azure resources and workloads       |
+| **Azure Site Recovery**     | Provides workload replication and disaster recovery    |
+| **Test Failover**           | Validates disaster recovery procedures                 |
+
+### Key takeaway
+
+Today's exercises brought together several important aspects of **Azure operations and administration**. I learned that monitoring is not simply about viewing resource metrics; it involves establishing **alerts, dashboards, centralized logging, and queries** that allow administrators to identify and investigate issues. I also gained a clearer understanding of the distinction between **backup and disaster recovery**. Azure Backup provides recovery points for restoring protected data and workloads, while **Azure Site Recovery** focuses on replicating workloads and providing a recovery mechanism in the event of a major failure.
+
+The practical work also reinforced the importance of **testing recovery procedures**. Configuring a backup or replication relationship is only part of a resilient Azure environment; performing restoration and **test failover exercises** provides practical validation that the recovery process can actually be executed when required.

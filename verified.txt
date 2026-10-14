@@ -1,1 +1,6 @@
 380: B. storage2 General-purpose v2 (StorageV2)
+383: B. the az aks command  and D. the Azure portal
+391: D. Resource Group
+395: 5 instances, 4 instances
+401: You can perform a file recovery of VM1 to: Any Windows computer that has Internet connectivity
+     You can restore VM1 to: VM1 or a new Azure virtual machine only

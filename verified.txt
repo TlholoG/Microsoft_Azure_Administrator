@@ -1,0 +1,1 @@
+380: B. storage2 General-purpose v2 (StorageV2)

@@ -4,3 +4,15 @@
 395: 5 instances, 4 instances
 401: You can perform a file recovery of VM1 to: Any Windows computer that has Internet connectivity
      You can restore VM1 to: VM1 or a new Azure virtual machine only
+402: B.
+403: 3 and 20
+408: Dropdown 1: New-AzResourceGroupDeployment
+     Dropdown 2: -ResourceGroupName RG1
+410: Yes
+416: D
+419: increase the number of node pools
+     Authentication method
+
+
+
+

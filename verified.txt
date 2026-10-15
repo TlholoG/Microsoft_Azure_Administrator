@@ -12,7 +12,12 @@
 416: D
 419: increase the number of node pools
      Authentication method
-
-
-
+420: updates
+     --max-surge 2
+421: No, No, Yes
+424: 2 instances
+     5 Minutes
+429: No, Yes, Yes
+435: Azure Log Analytics workspace
+     Enable diagnostics on NSG1
 

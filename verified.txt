@@ -37,3 +37,14 @@
      Priority 110
 499: No, Yes, Yes
 503: C. 3389
+504: Obtain an IP address automatically
+     Configure VNET1 to use a custom DNS server
+519: VNet3 only
+     /23
+521: No, yes ,No
+524: No, Yes, No
+527: C
+533: B. Subnet1 only
+536: No, No, No
+
+

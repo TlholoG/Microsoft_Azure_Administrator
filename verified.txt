@@ -23,3 +23,10 @@
 438: Yes, No, No
 454: Change the private IP address of VM1 to static
      Create and configure an NSG
+459: partial question
+462: B. No
+464: all poor options, D is the most correct
+     the priority is what fails override
+466: Yes,Yes,Yes
+468: Yes
+476: 2, 1, 2

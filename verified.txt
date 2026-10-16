@@ -30,3 +30,10 @@
 466: Yes,Yes,Yes
 468: Yes
 476: 2, 1, 2
+480: yes, yes, yes
+490: Direction	Inbound
+     Source 10.1.0.10
+     Destination 10.1.0.11
+     Priority 110
+499: No, Yes, Yes
+503: C. 3389

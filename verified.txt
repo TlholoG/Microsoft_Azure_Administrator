@@ -54,3 +54,4 @@
      VNet1 and zone1.com only
 558: Alert1 (Closed): Can be changed to New or Acknowledged.
      Alert2 (New): Can be changed to Acknowledged or Closed.
+566: No, Yes, Yes

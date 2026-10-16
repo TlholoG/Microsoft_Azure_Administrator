@@ -46,5 +46,11 @@
 527: C
 533: B. Subnet1 only
 536: No, No, No
-
-
+538: b, c, d are all valid
+539: No, Yes, No
+554: Yes,Yes, No
+555: A 
+557: Network Contributor and Private DNS Zone Contributor only
+     VNet1 and zone1.com only
+558: Alert1 (Closed): Can be changed to New or Acknowledged.
+     Alert2 (New): Can be changed to Acknowledged or Closed.

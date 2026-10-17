@@ -1,0 +1,62 @@
+
+5- incorrect. correct answer is D 
+15- incorrect. Correct answer is B . 
+24- incorrect. Correct answer is A.
+28- incorrect. Correct answer is A. 
+32- incorrect. Correct answer is C.
+55- incorrect. Correct answer is B. 
+66- incorrect. Correct answer is A.
+67- incorrect. Correct answer is C. 
+69- incorrect. Correct answer is A and B.
+70- incorrect. Correct answer is B. 
+71- incorrect. Correct answer is A. 
+78- correct but answer should be A and B. If you can only select one then A.
+88- incorrect. Correct answer is B.
+92- incorrect. The correct answer is B and D.
+95- incorrect. Correct answer is D.
+107- incorrect. Correct answer is B. 
+108- role 3, correct. Role 4 incorrect. Role 4 answer is role 2 only. 
+110- Incorrect. Correct answer is A. 
+123- incorrect. Answer is Yes Yes Yes however the storage accounts configuration details were not given so the answer could be correct as is Yes No Yes. 
+132- incorrect. Correct answer is C. 
+133- App 1 incorrect should be Access Control (IAM). App 2 correct - SAS
+
+136- incorrect. Correct order:
+2. From the Azure portal, create an import job.
+3. Attach an external disk to Server1 and then run waimportexport.exe.
+1. From the Azure portal, update the import job.
+4. Detach the external disks from Server1 and ship the disks to an Azure data center.
+
+140- incorrect. file 1 - Endpoint 1, Endpoint 2 and Endpoint 3. 
+File 2 correct - Endpoint 1, Endpoint 2 and Endpoint 3. 
+
+142- Incorrect. Correct answer is No,No,Yes 
+148- incorrect. Can use Vault1 for backups- VM1 and share1 only
+Can use Vault2 for backups- Blob1 and share1 only
+151- Incorrect. Blob storage Azure Active Directory, access keys and shared access signatures
+File storage Access keys and shared access signatures only
+
+155- incorrect. Correct answers:
+Create a Storage Sync Service
+Create a sync group
+
+158- incorrect. Correct answer: B. Storage1 and Storage2 only.
+
+167- incorrect. Correct answers:
+Storage1: OAuth
+Storage2: A storage account access key
+
+173- incorrect. Correct answer: E. Task1, Task2, Task3, and Task4.
+
+179- incorrect. Correct answers:
+First action: Move a network interface to RG2.
+Second action: Attach a network interface.
+
+182- incorrect. Correct sequence:
+Upload a configuration to Azure Automation State Configuration.
+Compile a configuration into a node configuration.
+Check the compliance status of the nodes.
+
+184- incorrect. Correct answer: D. One virtual machine scale set that has 12 virtual machine instances.
+
+190- incorrect. Correct answer is B.

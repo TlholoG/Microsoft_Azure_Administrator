@@ -1,0 +1,180 @@
+191. Yes, Yes, No.
+192. A
+193. B
+194. C
+195. A & D
+196. D
+197. B
+198. B
+199. C
+200. No, Yes, Yes.
+201. A
+202. C
+203. D
+204. B & D
+205. D
+206. C
+207. D
+208. C
+209. C
+210. A & D
+212. C
+212. A & C
+213. A
+214. B
+215. A
+216. B
+217. D
+218. A
+219. C
+220. A
+221. C & D
+222. C
+223. A
+224. B
+225. A
+226. C
+227. B
+228. A & B
+229. B
+230. C
+231. 60, 12
+232. "tag1" : "value1" only, "tag2" : "value2", and "tag3" : "value3" only.
+233. 2, 7
+234. Can connect to the container from any device, the container will restart automatically. 
+235. A, E, F.
+236. B
+237. VM1 & VM2 continue to run, one email notification will be sent each month. 
+238. ASP1 and ASP3 only, ASP1 only.
+239. 6 VMs, 2 VMs.
+240. A & D
+241. B
+242. Premium SSD that uses ZRS, Read-only.
+243. B & E
+244. C
+245. Object, Read.
+246. B
+247. B, C, E
+248. A
+249. B
+250. E
+251. No, No, Yes.
+252. C
+253. Default routing tier, Enable support for customer-managed keys.
+254. RSA, 4096.
+255. A
+256. B
+257. Microsoft.Network/virtualNetworks/* , Microsoft.Storage/storageAccounts/read.
+258. Access Control (IAM), Geo-replication.
+259. E
+260. folder1 and Table1 only, Table1 only.
+261. 3, 1
+262. A
+263. A
+264. storage 1, storage 2, and storage 3 ; storage 2 only.
+265. C
+266. "daysAfterModificationGreaterThan" , "Blockblob".
+267. B
+268. (Table1, folder1, and container1) , (Table1 only).
+269. No, Yes, No.
+270. (contoso104 only) , (contoso101, contoso102, and contoso103 only).
+271. (will have no access), (will have read, write, and list access).
+272. A
+273. Yes, Yes, No.
+274. 3, Access tier (default).
+275. (Storage 3 only) , (Analytics1, Analytics2, and Analytics3).
+276. A & C
+277. storageaccount1 and storageaccount2 only, all the storage accounts.
+278. B
+279. Access control (IAM), Shared access signature (SAS).
+280. StorageV2, Standard_GRS.
+281. B, C, E
+282. No, No, No.
+283. user.department, and, -eq.
+284. Users can register applications (change toggle to No) , Restrict access to Azure AD administration portal (change toggle to Yes).
+285. No, No, Yes.
+286. Yes, No, No.
+287. B
+288. B
+289. C
+290. C
+291. D
+292. Delete button in top command bar next to "Edit properties" button, blue link "Reset redemption status" in B2B collaboration section in bottom right-hand side corner.
+293. C
+294. D
+295. Yes, No, Yes.
+296. Yes, No, Yes.
+297. Yes, Yes, No.
+298. A
+299. No, No, Yes.
+300. D
+301. B & Do
+302. D
+303. C
+304. A
+305. B
+305. (Tenant Root Group, ManagementGroup1, and Subscription1 only), (Subscription1, RG1, and VM1 only).
+306. Yes, No, No.
+307. Yes, No, No.
+308. Group1 only, Group1 and Group2 only.
+309. Yes, Yes, No.
+310. B
+311. Yes, Yes, No. 
+312. "/subscriptions/c276fc76-9cd4-44c9-99a7-99a7-4fd71546436e" , "Microsoft.Authorization/*"
+313. Users and groups, Cloud apps, Grant.
+314. C
+315. Yes, Yes, No.
+316. No, No, Yes.
+317. No, Yes, No.
+318. B
+319. Department: D1 only, Label: Value1 only.
+320. C
+321. An Azure Key Vault, An access policy.
+322. C
+333. B
+334. B
+335. A
+336. B
+337. B
+338. B
+339. A
+340. C
+341. B
+342. B
+343. A
+344. E
+345. A
+346. D
+347. B
+348. C
+349. B
+350. A
+351. Yes, Yes, No.
+352. "/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e", "Microsoft.Authorization/"
+353. A
+354. A
+355. B
+356. B
+357. B
+358. A
+359. B
+360. B
+361. B
+362. A
+363. Azure AD and shared access signature (SAS), Shared access signatures (SAS) only.
+364. B
+365. Users may join devices to Azure AD = selected, Require Multi-Factor Auth to join devices = Yes.
+366. D
+367. Resource Policy Contributor for Sub1, Resource Policy Contributor for RG2.
+368. A
+369. Access control (IAM), Shared access signature (SAS).
+370. StorageV2, Standard_GRS.
+371. A & C
+372. Install the Azure File Sync agent on Server 1 -> Register Server 1 -> Add a server endpoint.
+373. No, No, Yes.
+374. D
+375. D
+376. B
+377. Yes, No, No.
+378. Storage2 and storage3 only, storage2 only.
+379. StorageV2 (general purpose v2), Storage2.

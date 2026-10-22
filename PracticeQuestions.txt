@@ -1,0 +1,24 @@
+Question 5
+
+You are planning to deploy an Ubuntu Server virtual machine to your company's Azure subscription.
+You are required to implement a custom deployment that includes adding a particular trusted root certification
+authority (CA).
+Which of the following should you use to create the virtual machine?
+A. The New-AzureRmVm cmdlet.
+B. The New-AzVM cmdlet.
+C. The Create-AzVM cmdlet.
+D. The az vm create command.
+
+Question 
+
+
+
+Question
+
+
+
+Question
+
+
+
+Question

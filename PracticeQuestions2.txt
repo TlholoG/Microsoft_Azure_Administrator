@@ -1,3 +1,57 @@
+Question 31
+
+Your company has two on-premises servers named SRV01 and SRV02. Developers have created an application that
+runs on SRV01. The application calls a service on SRV02 by IP address.
+You plan to migrate the application on Azure virtual machines (VMs). You have configured two VMs on a single
+subnet in an Azure virtual network.
+You need to configure the two VMs with static internal IP addresses.
+What should you do?
+A. Run the New-AzureRMVMConfig PowerShell cmdlet.
+B. Run the Set-AzureSubnet PowerShell cmdlet.
+C. Modify the VM properties in the Azure Management Portal.
+D. Modify the IP properties in Windows Network and Sharing Center.
+E. Run the Set-AzureStaticVNetIP PowerShell cmdlet.
+
+Question 35
+
+Your company's Azure subscription includes Azure virtual machines (VMs) that run Windows Server 2016.
+One of the VMs is backed up every day using Azure Backup Instant Restore.
+When the VM becomes infected with data encrypting ransomware, you are required to restore the VM.
+Which of the following actions should you take?
+A. You should restore the VM after deleting the infected VM.
+B. You should restore the VM to any VM within the company's subscription.
+C. You should restore the VM to a new Azure VM.
+D. You should restore the VM to an on-premise Windows device.
+
+Question 37
+
+Your company has an Azure subscription that includes a Recovery Services vault.
+You want to use Azure Backup to schedule a backup of your company's virtual machines (VMs) to the Recovery
+Services vault.
+Which of the following VMs can you back up? Choose all that apply.
+A. VMs that run Windows 10.
+B. VMs that run Windows Server 2012 or higher.
+C. VMs that have NOT been shut down.
+D. VMs that run Debian 8.2+.
+E. VMs that have been shut down.
+
+Question 42
+
+You have an Azure subscription named Subscription1 that contains a resource group named RG1.
+In RG1, you create an internal load balancer named LB1 and a public load balancer named LB2.
+You need to ensure that an administrator named Admin1 can manage LB1 and LB2. The solution must follow the
+principle of least privilege.
+Which role should you assign to Admin1 for each task? To answer, select the appropriate options in the answer
+area.
+
+Question
+
+
+
+Question
+
+
+
 Question
 
 

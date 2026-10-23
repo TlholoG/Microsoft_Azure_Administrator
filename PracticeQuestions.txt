@@ -9,16 +9,57 @@ B. The New-AzVM cmdlet.
 C. The Create-AzVM cmdlet.
 D. The az vm create command.
 
-Question 
+Question 18
 
+Your company has an Azure subscription.
+You need to deploy a number of Azure virtual machines (VMs) using Azure Resource Manager (ARM) templates.
+You have been informed that the VMs will be included in a single availability set.
+You are required to make sure that the ARM template you configure allows for as many VMs as possible to remain
+accessible in the event of fabric failure or maintenance.
+Which of the following is the value that you should configure for the platformFaultDomainCount property?
+A. 10
+B. 30
+C. Min Value
+D. Max Value
 
+Question 19
 
-Question
+Your company has an Azure subscription.
+You need to deploy a number of Azure virtual machines (VMs) using Azure Resource Manager (ARM) templates.
+You have been informed that the VMs will be included in a single availability set.
+You are required to make sure that the ARM template you configure allows for as many VMs as possible to remain
+accessible in the event of fabric failure or maintenance.
+Which of the following is the value that you should configure for the platformUpdateDomainCount property?
+A. 10
+B. 20
+C. 30
+D. 40
 
+Question 21
 
+Your company has an Azure Active Directory (Azure AD) tenant that is configured for hybrid coexistence with the
+on-premises Active Directory domain.
+The on-premise virtual environment consists of virtual machines (VMs) running on Windows Server 2012 R2 Hyper-V host servers.
+You have created some PowerShell scripts to automate the configuration of newly created VMs. You plan to create several new VMs.
+You need a solution that ensures the scripts are run on the new VMs.
+Which of the following is the best solution?
+A. Configure a SetupComplete.cmd batch file in the %windir%\setup\scripts directory.
+B. Configure a Group Policy Object (GPO) to run the scripts as logon scripts.
+C. Configure a Group Policy Object (GPO) to run the scripts as startup scripts.
+D. Place the scripts in a new virtual hard disk (VHD).
 
-Question
+Question 23
 
+DRAG DROP -
+Your company has an Azure subscription that includes a number of Azure virtual machines (VMs), which are all part
+of the same virtual network.
+Your company also has an on-premises Hyper-V server that hosts a VM, named VM1, which must be replicated to
+Azure.
+Which of the following objects that must be created to achieve this goal? Answer by dragging the correct option
+from the list to the answer area.
+Select and Place:
 
+Hyper-V site: Represents the on-premises Hyper-V servers that will be protected.
+Azure Recovery Services Vault: A key component in ASR that stores recovery points and orchestrates replication, failover, and failback.
+Replication policy : Defines the replication settings, including frequency and retention.
 
-Question

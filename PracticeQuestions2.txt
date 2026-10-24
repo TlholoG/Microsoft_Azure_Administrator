@@ -44,17 +44,250 @@ principle of least privilege.
 Which role should you assign to Admin1 for each task? To answer, select the appropriate options in the answer
 area.
 
-Question
+Question 43
 
+You have an Azure subscription that contains an Azure Active Directory (Azure AD) tenant named contoso.com and
+an Azure Kubernetes Service (AKS) cluster named AKS1.
+An administrator reports that she is unable to grant access to AKS1 to the users in contoso.com.
+You need to ensure that access to AKS1 can be granted to the contoso.com users.
+What should you do first?
+A. From contoso.com, modify the Organization relationships settings.
+B. From contoso.com, create an OAuth 2.0 authorization endpoint.
+C. Recreate AKS1.
+D. From AKS1, create a namespace.
 
+Question 45
 
-Question
+You have an Azure Active Directory (Azure AD) tenant named contoso.com that contains the users shown in the
+following table:
 
+Question 46
 
+You have the Azure management groups shown in the following table:
+You add Azure subscriptions to the management groups as shown in the following table:
 
-Question
+Question 48
 
+You have an Azure subscription that contains the resources shown in the following table:
 
+Question 51
+
+You have an Azure Active Directory (Azure AD) tenant that contains 5,000 user accounts.
+You create a new user account named AdminUser1.
+You need to assign the User administrator administrative role to AdminUser1.
+What should you do from the user account properties?
+A. From the Licenses blade, assign a new license
+B. From the Directory role blade, modify the directory role
+C. From the Groups blade, invite the user account to a new group
+
+Question 52
+
+You have an Azure Active Directory (Azure AD) tenant named contoso.onmicrosoft.com that contains 100 user
+accounts.
+You purchase 10 Azure AD Premium P2 licenses for the tenant.
+You need to ensure that 10 users can use all the Azure AD Premium features.
+What should you do?
+A. From the Licenses blade of Azure AD, assign a license
+B. From the Groups blade of each user, invite the users to a group
+C. From the Azure AD domain, add an enterprise application
+D. From the Directory role blade of each user, modify the directory role
+
+Question 54
+
+You sign up for Azure Active Directory (Azure AD) Premium P2.
+You need to add a user named [email protected] as an administrator on all the computers that will be joined to the
+Azure AD domain.
+What should you configure in Azure AD?
+A. Device settings from the Devices blade
+B. Providers from the MFA Server blade
+C. User settings from the Users blade
+D. General settings from the Groups blade
+
+Question 55
+
+HOTSPOT -
+You have Azure Active Directory tenant named Contoso.com that includes following users:
+
+Question 62
+
+DRAG DROP -
+You have an Azure subscription that is used by four departments in your company. The subscription contains 10
+resource groups. Each department uses resources in several resource groups.
+You need to send a report to the finance department. The report must detail the costs for each department.
+Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of
+actions to the answer area and arrange them in the correct order.
+Select and Place:
+
+Question 64
+
+HOTSPOT -
+You have an Azure subscription that contains a virtual network named VNET1 in the East US 2 region. A network
+interface named VM1-NI is connected to
+VNET1.
+You successfully deploy the following Azure Resource Manager template.
+
+Question 66
+
+HOTSPOT -
+You have an Azure subscription named Subscription1 that has a subscription ID of c276fc76-9cd4-44c9-99a7-
+4fd71546436e.
+You need to create a custom RBAC role named CR1 that meets the following requirements:
+✑ Can be assigned only to the resource groups in Subscription1
+✑ Prevents the management of the access permissions for the resource groups
+✑ Allows the viewing, creating, modifying, and deleting of resources within the resource groups
+What should you specify in the assignable scopes and the permission elements of the definition of CR1? To answer,
+select the appropriate options in the answer area.
+NOTE: Each correct selection is worth one point.
+Hot Area:
+
+Question 67
+
+You have an Azure subscription.
+Users access the resources in the subscription from either home or from customer sites. From home, users must
+establish a point-to-site VPN to access the Azure resources. The users on the customer sites access the Azure
+resources by using site-to-site VPNs.
+Question: 67 CertyIQ
+You have a line-of-business-app named App1 that runs on several Azure virtual machine. The virtual machines run
+Windows Server 2016.
+You need to ensure that the connections to App1 are spread across all the virtual machines.
+What are two possible Azure services that you can use? Each correct answer presents a complete solution.
+NOTE: Each correct selection is worth one point.
+A. an internal load balancer
+B. a public load balancer
+C. an Azure Content Delivery Network (CDN)
+D. Traffic Manager
+E. an Azure Application Gateway
+
+Question 69
+
+HOTSPOT -
+You have an Azure Active Directory (Azure AD) tenant.
+You need to create a conditional access policy that requires all users to use multi-factor authentication when they
+access the Azure portal.
+Which three settings should you configure? To answer, select the appropriate settings in the answer area.
+NOTE: Each correct selection is worth one point.
+Hot Area:
+
+Question 71
+
+You have an Azure subscription linked to an Azure Active Directory tenant. The tenant includes a user account
+named User1.
+You need to ensure that User1 can assign a policy to the tenant root management group.
+What should you do?
+A. Assign the Owner role for the Azure Subscription to User1, and then modify the default conditional access
+policies.
+B. Assign the Owner role for the Azure subscription to User1, and then instruct User1 to configure access
+management for Azure resources.
+C. Assign the Global administrator role to User1, and then instruct User1 to configure access management for
+Azure resources.
+D. Create a new management group and delegate User1 as the owner of the new management group.
+
+Question 73
+
+HOTSPOT -
+You have a hybrid deployment of Azure Active Directory (Azure AD) that contains the users shown in the following
+table.
+
+Question 79
+
+You have an Azure subscription named Subscription1 that contains an Azure virtual machine named VM1. VM1 is in
+a resource group named RG1.
+VM1 runs services that will be used to deploy resources to RG1.
+You need to ensure that a service running on VM1 can manage the resources in RG1 by using the identity of VM1.
+What should you do first?
+A. From the Azure portal, modify the Managed Identity settings of VM1
+B. From the Azure portal, modify the Access control (IAM) settings of RG1
+C. From the Azure portal, modify the Access control (IAM) settings of VM1
+D. From the Azure portal, modify the Policies settings of RG1
+
+Question 82
+
+DRAG DROP -
+You have an Azure Active Directory (Azure AD) tenant that has the contoso.onmicrosoft.com domain name.
+You have a domain name of contoso.com registered at a third-party registrar.
+You need to ensure that you can create Azure AD users that have names containing a suffix of @contoso.com.
+Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of
+actions to the answer area and arrange them in the correct order.
+Select and Place:
+
+Question 85
+
+HOTSPOT -
+You have an Azure subscription that contains a storage account named storage1. The subscription is linked to an
+Azure Active Directory (Azure AD) tenant named contoso.com that syncs to an on-premises Active Directory
+domain.
+The domain contains the security principals shown in the following table.
+
+Question 91
+
+You have three offices and an Azure subscription that contains an Azure Active Directory (Azure AD) tenant.
+You need to grant user management permissions to a local administrator in each office.
+What should you use?
+A. Azure AD roles
+B. administrative units
+C. access packages in Azure AD entitlement management
+D. Azure roles
+
+Question 95
+
+HOTSPOT -
+You configure the custom role shown in the following exhibit
+
+Question 97
+
+You have 15 Azure subscriptions.
+You have an Azure Active Directory (Azure AD) tenant that contains a security group named Group1.
+You plan to purchase additional Azure subscription.
+You need to ensure that Group1 can manage role assignments for the existing subscriptions and the planned
+Question: 96 CertyIQ
+Question: 97 CertyIQ
+subscriptions. The solution must meet the following requirements:
+✑ Use the principle of least privilege.
+✑ Minimize administrative effort.
+What should you do?
+A. Assign Group1 the Owner role for the root management group.
+B. Assign Group1 the User Access Administrator role for the root management group.
+C. Create a new management group and assign Group1 the User Access Administrator role for the group.
+D. Create a new management group and assign Group1 the Owner role for the group.
+
+Question 107
+
+HOTSPOT
+-
+You have an Azure subscription that is linked to an Azure AD tenant. The tenant contains the custom role-based
+access control (RBAC) roles shown in the following table.
+
+Question 109
+
+You have an Azure subscription that contains 10 virtual machines, a key vault named Vault1, and a network security
+group (NSG) named NSG1. All the resources are deployed to the East US Azure region.
+The virtual machines are protected by using NSG1. NSG1 is configured to block all outbound traffic to the internet.
+You need to ensure that the virtual machines can access Vault1. The solution must use the principle of least
+privilege and minimize administrative effort
+What should you configure as the destination of the outbound security rule for NSG1?
+A. an application security group
+B. a service tag
+C. an IP address range
+
+Question 110
+
+You have an Azure AD tenant named adatum.com that contains the groups shown in the following table.
+
+Question 113
+
+HOTSPOT
+-
+You have an Azure subscription that contains the users shown in the following table.
+
+Question 119
+
+You have an Azure subscription that contains the resources shown in the following table.
+
+Question 121
+
+HOTSPOT
+-
+You have an Azure AD tenant named adatum.com that contains the groups shown in the following table.
 
 Question
 

@@ -491,6 +491,80 @@ Question 210
 
 You have an Azure subscription that contains the resources shown in the following table.
 
+Question 214
+
+HOTSPOT
+-
+You have an Azure subscription that contains the storage account shown in the following exhibit.
+Use
+
+Question 216
+
+You have an Azure subscription. The subscription contains a storage account named storage1 that has the lifecycle
+management rules shown in the following table.
+On
+
+Question 217
+
+HOTSPOT
+-
+You have an Azure subscription that contains the storage accounts shown in the following table.
+
+Question 223
+
+You have an Azure subscription that contains a storage account named storage1.
+You plan to use conditions when assigning role-based access control (RBAC) roles to storage1.
+Which storage1 services support conditions when assigning roles?
+A.containers only
+B.file shares only
+C.tables only
+D.queues only
+E.containers and queues only
+F.files shares and tables only
+
+Question 226
+
+HOTSPOT
+-
+You have an Azure subscription that has offices in the East US and West US Azure regions.
+You plan to create the storage account shown in the following exhibit.
+
+Question 235
+
+You have an Azure subscription that contains a storage account named storage1.
+You need to configure a shared access signature (SAS) to ensure that users can only download blobs securely by
+name.
+Which two settings should you configure? To answer, select the appropriate settings in the answer area.
+NOTE: Each correct answer is worth one point.
+
+Question 239
+
+You have an Azure subscription that contains the storage accounts shown in the following table.
+
+Question 243
+
+You have an Azure subscription that contains a storage account named storage1. The storage1 account contains
+blobs in a container named container1.
+You plan to share access to storage1.
+You need to generate a shared access signature (SAS). The solution must meet the following requirements:
+•Ensure that the SAS can only be used to enumerate and download blobs stored in container1.
+•Use the principle of least privilege.
+Which three settings should you enable? To answer, select the appropriate settings in the answer area.
+
+Question 245
+
+HOTSPOT
+-
+You have an Azure Storage account named contoso2024 that contains the resources shown in the following table.
+
+Question
+
+
+
+Question
+
+
+
 Question
 
 

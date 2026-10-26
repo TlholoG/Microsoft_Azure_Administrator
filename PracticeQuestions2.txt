@@ -557,16 +557,241 @@ HOTSPOT
 -
 You have an Azure Storage account named contoso2024 that contains the resources shown in the following table.
 
-Question
+Question 260
+
+HOTSPOT -
+You have the App Service plans shown in the following table.
+
+Question 236
 
 
 
-Question
+Question 264
 
+DRAG DROP -
+You onboard 10 Azure virtual machines to Azure Automation State Configuration.
+You need to use Azure Automation State Configuration to manage the ongoing consistency of the virtual machine
+configurations.
+Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of
+actions to the answer area and arrange them in the correct order.
+NOTE: More than one order of answer choices is correct. You will receive credit for any of the correct orders you
+select.
+Select and Place:
 
+Question 265
 
-Question
+You have an Azure Resource Manager template named Template1 that is used to deploy an Azure virtual machine.
+Template1 contains the following text:
 
+Question 267 @@@@@@@@@@@@------Availability/Fault domin question again@@@@@@@@@@@@@@@@@@
+
+You plan to move a distributed on-premises app named App1 to an Azure subscription.
+After the planned move, App1 will be hosted on several Azure virtual machines.
+You need to ensure that App1 always runs on at least eight virtual machines during planned Azure maintenance.
+What should you create?
+A. one virtual machine scale set that has 10 virtual machines instances
+B. one Availability Set that has three fault domains and one update domain
+C. one Availability Set that has 10 update domains and one fault domain
+D. one virtual machine scale set that has 12 virtual machines instances
+
+Question 273
+
+Note: This question is part of a series of questions that present the same scenario. Each question in the series
+contains a unique solution that might meet the stated goals. Some question sets might have more than one correct
+solution, while others might not have a correct solution.
+After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not
+appear in the review screen.
+You have an Azure subscription that contains the resources shown in the following table.
+
+Question 276
+
+HOTSPOT -
+You have an Azure subscription named Subscription1 that contains the quotas shown in the following table.
+
+Question 277 @@@@@@@@@@@@@@----Availability/fault domains question again-----------@@@@@@@@@@@@@
+
+HOTSPOT -
+You have an Azure subscription that contains an Azure Availability Set named WEBPROD-AS-USE2 as shown in the
+following exhibit
+
+Question 278
+
+You deploy an Azure Kubernetes Service (AKS) cluster named Cluster1 that uses the IP addresses shown in the
+
+Question 280
+
+HOTSPOT -
+You plan to deploy an Azure container instance by using the following Azure Resource Manager template.
+
+Question 282
+
+You have an app named App1 that runs on an Azure web app named webapp1.
+The developers at your company upload an update of App1 to a Git repository named Git1.
+Webapp1 has the deployment slots shown in the following table.
+
+Question 283
+
+You have an Azure subscription named Subscription1 that has the following providers registered:
+✑ Authorization
+✑ Automation
+✑ Resources
+✑ Compute
+✑ KeyVault
+✑ Network
+✑ Storage
+✑ Billing
+✑ Web
+Subscription1 contains an Azure virtual machine named VM1 that has the following configurations:
+✑ Private IP address: 10.0.0.4 (dynamic)
+✑ Network security group (NSG): NSG1
+✑ Public IP address: None
+✑ Availability set: AVSet
+✑ Subnet: 10.0.0.0/24
+✑ Managed disks: No
+✑ Location: East US
+You need to record all the successful and failed connection attempts to VM1.
+Which three actions should you perform? Each correct answer presents part of the solution.
+NOTE: Each correct selection is worth one point.
+
+A. Enable Azure Network Watcher in the East US Azure region.
+B. Add an Azure Network Watcher connection monitor.
+C. Register the MicrosoftLogAnalytics provider.
+D. Create an Azure Storage account.
+E. Register the Microsoft.Insights resource provider.
+F. Enable Azure Network Watcher flow logs.
+
+Question 284
+
+You need to deploy an Azure virtual machine scale set that contains five instances as quickly as possible.
+What should you do?
+A. Deploy five virtual machines. Modify the Availability Zones settings for each virtual machine.
+B. Deploy five virtual machines. Modify the Size setting for each virtual machine.
+C. Deploy one virtual machine scale set that is set to VM (virtual machines) orchestration mode.
+D. Deploy one virtual machine scale set that is set to ScaleSetVM orchestration mode.
+
+Question 289
+
+You have an Azure Active Directory (Azure AD) tenant named adatum.com that contains the users shown in the
+following table.
+
+Question 291
+
+HOTSPOT -
+You have an Azure subscription named Subscription1 that contains the following resource group:
+✑ Name: RG1
+✑ Region: West US
+✑ Tag: `tag1`: `value1`
+You assign an Azure policy named Policy1 to Subscription1 by using the following configurations:
+✑ Exclusions: None
+✑ Policy definition: Append a tag and its value to resources
+✑ Assignment name: Policy1
+✑ Parameters:
+✑ Tag name: tag2
+Tag value: value2 -
+After Policy1 is assigned, you create a storage account that has the following configuration:
+✑ Name: storage1
+✑ Location: West US
+✑ Resource group: RG1
+✑ Tags: `tag3`: `value3`
+You need to identify which tags are assigned to each resource.
+What should you identify? To answer, select the appropriate options in the answer area.
+NOTE: Each correct selection is worth one point.
+Hot Area:
+
+Question 292
+
+HOTSPOT -
+You have an Azure subscription named Subscription1.
+In Subscription1, you create an alert rule named Alert1.
+The Alert1 action group is configured as shown in the following exhibit
+
+Question 294
+
+You have an Azure Kubernetes Service (AKS) cluster named AKS1.
+You need to configure cluster autoscaler for AKS1.
+Which two tools should you use? Each correct answer presents a complete solution.
+NOTE: Each correct selection is worth one point.
+
+Question 301
+
+HOTSPOT -
+You have an Azure subscription named Subscription1. Subscription1 contains a virtual machine named VM1.
+You install and configure a web server and a DNS server on VM1.
+VM1 has the effective network security rules shown in the following exhibit:
+
+Question 310 @@@@@@@@@@@@-------Update/faul domain question again----------@@@@@@@@@@@@@@@
+
+HOTSPOT -
+You have an Azure subscription that contains a virtual machine scale set. The scale set contains four instances that
+have the following configurations:
+✑ Operating system: Windows Server 2016
+✑ Size: Standard_D1_v2
+You run the get-azvmss cmdlet as shown in the following exhibit:
+
+Question 314
+
+You plan to back up an Azure virtual machine named VM1.
+You discover that the Backup Pre-Check status displays a status of Warning.
+What is a possible cause of the Warning status?
+
+Question 316 @@@@@@@@@@@@-------Update/faul domain question again----------@@@@@@@@@@@@@@@
+
+HOTSPOT -
+You have an Azure subscription.
+You plan to use Azure Resource Manager templates to deploy 50 Azure virtual machines that will be part of the
+same availability set.
+You need to ensure that as many virtual machines as possible are available if the fabric fails or during servicing.
+How should you configure the template? To answer, select the appropriate options in the answer area.
+NOTE: Each correct selection is worth one point.
+Hot Area:
+
+Question 331
+
+HOTSPOT -
+You have an Azure App Service app named WebApp1 that contains two folders named Folder1 and Folder2.
+You need to configure a daily backup of WebApp1. The solution must ensure that Folder2 is excluded from the
+backup.
+What should you create first, and what should you use to exclude Folder2? To answer, select the appropriate
+options in the answer area.
+NOTE: Each correct selection is worth one point.
+
+Question 332
+
+You plan to deploy several Azure virtual machines that will run Windows Server 2019 in a virtual machine scale set
+by using an Azure Resource Manager template.
+You need to ensure that NGINX is available on all the virtual machines after they are deployed.
+What should you use?
+A. the Publish-AzVMDscConfiguration cmdlet
+B. Azure Application Insights
+C. Azure Custom Script Extension
+D. a Microsoft Endpoint Manager device configuration profile
+
+Question 335
+
+HOTSPOT
+-
+You are creating an Azure Kubernetes Services (AKS) cluster as shown in the following exhibit.
+
+Question 336
+
+HOTSPOT
+-
+You have an Azure subscription that contains an Azure Kubernetes Service (AKS) cluster named Cluster1. Cluster1
+hosts a node pool named Pool1 that has four nodes.
+
+Question 339
+
+HOTSPOT
+-
+You have an Azure subscription that contains a resource group named RG1.
+You plan to use an Azure Resource Manager (ARM) template named template1 to deploy resources. The solution
+must meet the following requirements:
+
+Question 351
+
+You have an Azure subscription that contains the container images shown in the following table.
+
+Question currently 400
 
 
 Question
